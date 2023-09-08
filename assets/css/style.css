@@ -1,0 +1,975 @@
+/**
+  * Name: Restaurant HTML Template - Coffee
+  * Version: 1.0.1
+  * Author: Themesflat
+  * Author URI: http://www.themesflat.com
+*/
+@import "../icon/style.css";
+@import "shortcodes.css";
+@import "responsive.css";
+@import "animation.css";
+@import "animate.min.css";
+@import "swiper-bundle.min.css";
+@import "../font/font.css";
+@import "bootstrap.css";
+/**
+  	* Reset Browsers
+    * General
+	* Elements
+  	* Forms
+	* Typography
+	* Extra classes
+	* link style
+	* header
+    * footer
+    * header section
+    * mobile
+    * cusor
+    * preload
+
+*/
+
+/* Reset Browsers
+-------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    outline       : 0;
+    font-size     : 100%;
+    font          : inherit;
+    vertical-align: baseline;
+    font-family   : inherit;
+    font-size     : 100%;
+    font-style    : inherit;
+    font-weight   : inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+html {
+    font-size               : 62.5%;
+    overflow-y              : scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust    : 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+body {
+    background : #fff;
+    line-height: 1;
+    padding: 0 !important;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align : left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+a img {
+    border: 0
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+select {
+    max-width: 100%
+}
+
+/* General
+-------------------------------------------------------------- */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family            : 'Oswald', sans-serif;
+    color                  : #696969;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering         : optimizeLegibility;
+    overflow-x             : hidden;
+    overflow-y             : auto;
+}
+
+img {
+    height                : auto;
+    max-width             : 100%;
+    vertical-align        : middle;
+    -ms-interpolation-mode: bicubic
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size  : 15px;
+    line-height: 25px;
+    color      : #696969;
+}
+
+strong,
+b,
+cite {
+    font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i,
+blockquote {
+    font-style: italic;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #e0e0e0;
+    cursor       : help;
+}
+
+.btn-link:focus, 
+.btn-link:hover,
+mark,
+ins {
+    text-decoration: none;
+}
+
+sup,
+sub {
+    font-size     : 75%;
+    height        : 0;
+    line-height   : 0;
+    position      : relative;
+    vertical-align: baseline;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}
+
+address {
+    font-style: italic;
+    margin    : 0 0 20px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+    margin         : 20px 0;
+    padding        : 4px 12px;
+    background     : #f5f5f5;
+    border         : 1px solid #e0e0e0;
+    overflow-x     : auto;
+    -webkit-hyphens: none;
+    -moz-hyphens   : none;
+    hyphens        : none;
+    border-radius  : 0;
+    height         : auto;
+}
+
+svg,
+svg path {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Elements
+-------------------------------------------------------------- */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+hr {
+    margin-bottom: 20px;
+    border       : dashed 1px #ccc;
+}
+
+/* List */
+
+ul,
+ol {
+    padding: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li>ul,
+li>ol {
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul li,
+ol li {
+    padding: 0;
+}
+
+dl,
+dd {
+    margin: 0 0 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+del,
+.disable {
+    text-decoration: line-through;
+    filter         : alpha(opacity=50);
+    opacity        : 0.5;
+}
+
+
+/* Table */
+
+table,
+th,
+td {
+    border: 1px solid #343444;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing : 0;
+    border-width   : 1px 0 0 1px;
+    margin         : 0 0 30px;
+    table-layout   : fixed;
+    width          : 100%;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align : left;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight : bold;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+}
+
+th,
+td {
+    padding: 8px 12px;
+}
+
+/* Media */
+
+embed,
+object,
+video {
+    margin-bottom : 20px;
+    max-width     : 100%;
+    vertical-align: middle;
+}
+
+p>embed,
+p>iframe,
+p>object,
+p>video {
+    margin-bottom: 0;
+}
+
+/* Forms
+-------------------------------------------------------------- */
+/* Fixes */
+button,
+input {
+    line-height: normal;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size     : 100%;
+    line-height   : inherit;
+    margin        : 0;
+    vertical-align: baseline;
+}
+
+input,
+textarea,
+select {
+    font-size       : 14px;
+    max-width       : 100%;
+    background      : #fff;
+    /* Removing the inner shadow on iOS inputs */
+}
+
+textarea {
+    overflow      : auto;
+    /* Removes default vertical scrollbar in IE6/7/8/9 */
+    vertical-align: top;
+    /* Improves readability and alignment in all browsers */
+}
+
+input[type="checkbox"] {
+    display: inline;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    line-height       : 1;
+    cursor            : pointer;
+    -webkit-appearance: button;
+    border            : 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding       : 0;
+    width         : 20px;
+    height        : 20px;
+    margin-right  : 10px;
+    cursor        : pointer;
+    vertical-align: sub;
+    /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* Addresses appearance set to searchfield in S5, Chrome */
+}
+
+input[type="search"]::-webkit-search-decoration {
+    /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border : 0;
+    padding: 0;
+}
+
+
+/* Remove chrome yellow autofill */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset
+}
+
+
+/* Reset search styling */
+input[type="search"] {
+    outline: 0
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none
+}
+
+/* Contact Form 7 */
+fieldset {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+}
+
+.select {
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 20px 30px;
+    height: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 11px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #696969;
+}
+
+select option {
+    padding: 20px 30px;
+    font-size: 16px;
+    line-height: 11px;
+    color: #696969;
+    background-color: #fff;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    border: none;
+    outline           : 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow   : none;
+    box-shadow        : none;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 11px;
+    border-radius: 10px;
+    padding: 25px 30px 24px 30px;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    color: #171412;
+}
+
+/* Input focus */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+    border: 1px solid #666666;
+    border-radius: 12px;
+    padding: 24px 29px 23px 29px;
+    outline           : 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow   : none;
+    box-shadow        : none;
+}
+
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="datetime"]::placeholder,
+input[type="datetime-local"]::placeholder,
+input[type="date"]::placeholder,
+input[type="month"]::placeholder,
+input[type="time"]::placeholder,
+input[type="week"]::placeholder,
+input[type="number"]::placeholder,
+input[type="email"]::placeholder,
+input[type="url"]::placeholder,
+input[type="search"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="color"]::placeholder {
+    font-size  : 16px;
+    font-weight: 400;
+    line-height: 11px;
+    font-family: 'Oswald';
+    color      : #171412;
+}
+
+/* Button */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    font-family       : 'Oswald';
+    font-weight       : 700;
+    font-size         : 16px;
+    line-height       : 11px;
+    background-color  : #666666;
+    color             : #fff;
+    border-radius     : 15px;
+    padding           : 15px;
+    height            : 51px;
+    border            : none;
+    display           : inline-block;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    transition        : all 0.3s ease;
+    position          : relative;
+}
+
+/* Button hover + focus */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+    outline: 0;
+    border: none;
+}
+
+textarea {
+    height: 130px;
+}
+
+/* Placeholder color */
+::-webkit-input-placeholder {
+    color: #171412;
+}
+
+:-moz-placeholder {
+    color: #171412;
+}
+
+::-moz-placeholder {
+    color  : #171412;
+    opacity: 1;
+}
+
+/* Since FF19 lowers the opacity of the placeholder by default */
+:-ms-input-placeholder {
+    color: #171412;
+}
+
+/* Typography
+-------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family   : 'Oswald', sans-serif;
+    color         : #051028;
+    font-weight   : 700;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 90px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 57px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 33px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* Extra classes
+-------------------------------------------------------------- */
+.hidden {
+    display: none;
+}
+.block {
+    display: block;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed !important;
+}
+.position-unset {
+    position: unset;
+}
+.z-5 {
+    z-index: 5;
+}
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.text-end {
+    text-align: end;
+}
+.text-center {
+    text-align: center;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.italic {
+    font-style: italic;
+}
+.e-resize {
+    cursor: e-resize;
+}
+#wrapper{
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* link style
+-------------------------------------------------------------- */
+a {
+    text-decoration   : none;
+    color             : #051028;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color             : #C3A27C;
+    text-decoration   : none;
+    outline           : 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+a:focus {
+    color: #FFF;
+}
+
+/* tf-button */
+/* -------------------------------------------------------------- */
+
+
+
+
+/* header */
+/* -------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner-page */
+/* -------------------------------------------------------------- */
+.banner-page {
+    padding-top: 307px;
+    padding-bottom: 54px;
+    background-image: url(../images/bg-section/bg-blog.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-page::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 83px;
+    bottom: -57px;
+    left: 0;
+    background-image: url(../images/bg-section/wave.png);
+}
+
+.banner-page .text {
+    color: #F6E7D0;
+    text-align: center;
+    font-family: "Sue Ellen Francisco";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+.banner-page .heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 89px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    margin-top: 109px
+}
+
+.breadcrumbs li {
+    font-size: 14px;
+    font-family: 'CerebriSans';
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.breadcrumbs li.item::after {
+    position: absolute;
+    content: '/';
+    color: #FFF;
+    right: -19px;
+}
+
+.breadcrumbs li a {
+    color: #FFF;
+}
+
+.breadcrumbs li.active a {
+    color: #C3A27C;
+}

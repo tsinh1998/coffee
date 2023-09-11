@@ -17,5 +17,271 @@
     width: 100%;
 }
 
-/* side-bar */
+/* blog-single */
 /* ------------------------------------------------ */
+.blog-single .meta {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-single .meta .meta-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.blog-single .meta .meta-item .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(17, 17, 17, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-single .meta .meta-item .text {
+    font-size: 15px;
+    font-family: 'CerebriSans';
+    line-height: 18px;
+    color: rgba(17, 17, 17, 1);
+}
+
+.blog-single .main-title {
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #051028;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blog-single .main-post {
+    border-radius: 15px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.blog-single p {
+    margin-bottom: 40px;
+}
+
+.blog-single .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #171412;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* wg-blockquote */
+.wg-blockquote {
+    background-color: #faf1e3;
+    border-radius: 10px;
+    padding: 45px 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.wg-blockquote cite {
+    font-size: 15px;
+    line-height: 28px;
+    font-family: 'CerebriSans';
+    font-style: italic;
+    font-weight: 400;
+    color: #171412;
+}
+
+.wg-blockquote .text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #171412;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.wg-blockquote svg {
+    position: absolute;
+    bottom: 40px;
+    right: 70px;
+}
+
+.images-wrap {
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.video-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-wrap .icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.video-wrap .icon i {
+    color: #0e1927;
+    font-size: 24px;
+}
+
+.popup-youtube {
+    position: relative;
+}
+
+.popup-youtube::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #c3a27c;
+}
+
+.popup-youtube:hover::before {
+    animation: playvideo 2.5s ease-in-out infinite;
+}
+
+.blog-single .bottom {
+    padding: 20px 0;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.blog-single .bottom svg {
+    font-size: 13px;
+}
+
+.blog-single .bottom .tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-single .bottom .text {
+    font-size: 15px;
+    line-height: 28px;
+    font-family: 'CerebriSans';
+    color: #171412;
+}
+
+.widget-social.style-1 ul {
+    gap: 10px;
+}
+
+.widget-social.style-1 ul li a {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e4;
+    color: #2D2723;
+}
+
+.blog-single .title-1 {
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #051028;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* wg-comment */
+.wg-comment {
+    position: relative;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 75px;
+}
+
+.wg-comment .author {
+    display: flex;
+    gap: 20px;
+}
+
+.wg-comment .author .image {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 1px solid #c3a27c;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.wg-comment .author .name {
+    font-size: 15px;
+    line-height: 22px;
+    color: #171412;
+    margin-bottom: 5px;
+}
+
+.wg-comment .author .time {
+    font-size: 13px;
+    line-height: 19px;
+    color: #666;
+} 
+
+.wg-comment > a {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+/* post-comment */
+.post-comment {
+    margin-bottom: 134px;
+}
+
+.post-comment .text {
+    font-family: 'CerebriSans';
+    font-size: 15px;
+    line-height: 28px;
+    color: #171412;
+    margin-bottom: 30px;
+}
+
+form .columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+}
+
+form input.style-2 {
+    margin-bottom: 22px;
+}
+
+form textarea.style-2 {
+    margin-bottom: 50px;
+}

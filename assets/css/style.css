@@ -987,12 +987,17 @@ a:focus {
 }
 
 .button-style-1 {
+    width: max-content;
     height: 50px;
     background-color: #c3a27c;
     color: #FFF;
     font-size: 15px;
     letter-spacing: 1px;
     padding: 0 47px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-style-1:hover {
@@ -1000,6 +1005,7 @@ a:focus {
 }
 
 .button-reply {
+    width: max-content;
     height: 33px;
     padding: 0 20px;
     background-color: #2D2723;
@@ -1015,6 +1021,26 @@ a:focus {
 .button-reply:hover {
     background-color: #C3A27C;
     color: #FFF;
+}
+
+.button-style-2 {
+    width: max-content;
+    height: 50px;
+    background-color: #c3a27c;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 47px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-style-2:hover {
+    color: #2d2723;
+    background-color: #FFF;
 }
 
 /* header */
@@ -1659,4 +1685,43 @@ a:focus {
     transform: translate(-50%,-50%);
     padding: 17px;
     background-color: #2d2723;
+}
+
+/* heading-section */
+.heading-section .sub {
+    color: #C3A27C;
+    font-family: 'CerebriSans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.heading-section .sub-before {
+    padding-left: 25px;
+}
+
+.heading-section .sub-before::before {
+    position: absolute;
+    content: url(../icon/coffee-2.svg);
+    top: -3px;
+    left: 0;
+}
+
+.heading-section .sub-after::after {
+    position: absolute;
+    content: url(../icon/coffee-2.svg);
+    top: -3px;
+    margin-left: 13px;
+}
+
+.heading-section .main {
+    color: #171412;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
 }

@@ -285,3 +285,418 @@ form input.style-2 {
 form textarea.style-2 {
     margin-bottom: 50px;
 }
+
+/* page-title */
+/* ------------------------------------ */
+.page-title {
+    padding-top: 375px;
+    padding-bottom: 250px;
+    background-image: url(../images/bg-section/bg-home-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page-title::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 83px;
+    bottom: -57px;
+    left: 0;
+    background-image: url(../images/bg-section/wave.png);
+}
+
+.page-title::before {
+    background-color: rgb(18, 15, 12);
+    opacity: 0.4;
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+  
+
+.page-title .content .sub-title {
+    color: #F6E7D0;
+    text-align: center;
+    font-family: "Sue Ellen Francisco";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+.page-title .content .title {
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 89px;
+    text-transform: uppercase;
+}
+
+.page-title .content .text {
+    font-family: 'CerebriSans';
+    font-size: 17px;
+    line-height: 28px;
+    color: #FFF;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-title .content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* wg-welcom */
+.wg-welcom {
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    width: 403px;
+    padding: 60px 40px 50px;
+    background-color: #FFF;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.wg-welcom .button-close {
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #C3A27C;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wg-welcom .title {
+    color: #171412;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.wg-welcom .text {
+    color: #666;
+    font-family: 'CerebriSans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.wg-welcom svg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wg-welcom .number-phone {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 7px;
+}
+
+.wg-welcom .number-phone a {
+    color: #C3A27C;
+}
+
+.wg-welcom .mail,
+.wg-welcom .place {
+    color: #171412;
+    font-family: 'CerebriSans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.wg-welcom ul.time {
+    margin-bottom: 40px;
+}
+
+.wg-welcom ul.time li {
+    color: #0C0C0C;
+    font-family: 'CerebriSans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.wg-welcom ul.time li span {
+    color: #666;
+}
+
+.widget-social.style-2 ul {
+    gap: 5px;
+}
+
+.widget-social.style-2 ul li a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0c0c0c;
+}
+
+.widget-social.style-2 ul li a:hover {
+    color: #FFF;
+    background-color: #C3A27C;
+}
+
+/* wg-about */
+/* ------------------------------ */
+.wg-about {
+    padding-top: 125px;
+    padding-bottom: 140px;
+    background-image: url(../images/bg-section/about-bg1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 5;
+}
+
+.wg-about .wrap {
+    display: flex;
+    padding-left: 135px;
+    padding-right: 145px;
+}
+
+.wg-about .image {
+    min-width: 566px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: -74px;
+}
+
+.wg-about .content {
+    margin-top: 50px;
+    padding: 60px 75px 60px 80px;
+    position: relative;
+    z-index: 3;
+    background-color: #FFF;
+    border-top-left-radius: 10px;
+}
+
+.wg-about .content p {
+    margin-top: 20px;
+}
+
+.wg-about .content > a {
+    margin-top: 40px;
+}
+
+.wg-about .hour-opening {
+    min-width: 398px;
+    height: max-content;
+    margin-top: 78px;
+    padding: 50px 85px 50px 40px;
+    background-color: #2D2723;
+    border-radius: 15px;
+    position: relative;
+}
+
+.wg-about .hour-opening::before {
+    position: absolute;
+    content: '';
+    background-color: #C3A27C;
+    border-radius: 10px;
+    left: 29px;
+    right: 29px;
+    top: -16px;
+    bottom: -16px;
+    z-index: -1;
+}
+
+.wg-about .hour-opening .title {
+    color: #C3A27C;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 20px;
+    letter-spacing: 1PX;
+}
+
+.wg-about .hour-opening ul li {
+    color: #FFF;
+    font-size: 15px;
+    font-family: 'CerebriSans';
+    font-weight: 500;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wg-about .hour-opening ul li .active {
+    font-size: 15px;
+    font-family: 'CerebriSans';
+    font-weight: 400;
+    line-height: 30px;
+    color: #c3a27c;
+    margin-right: 30px;
+}
+
+.wg-about .hour-opening ul li .line {
+    flex-grow: 1;
+    height: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #57524f;
+}
+
+/* wg-service */
+/* --------------------------------- */
+.wg-service {
+    position: relative;
+}
+
+.wg-service::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 430px;
+    background: url(../images/box-item/bg-service.png);
+}
+
+.service-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-item::after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid #d8cbb6;
+    border-radius: 10px;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.service-item::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(18, 15, 12, 0.65);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover::before {
+    top: 0;
+}
+
+.service-item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    z-index: 5;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover .content {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.service-item .content > i {
+    font-size: 70px;
+    color: #f6e7d0;
+}
+
+.service-item .content .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.service-item .content .title span {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover .content .title span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.service-item .content .title a {
+    color: #FFF;
+}
+
+.service-item .content .title a:hover {
+    color: #C3A27C;
+}
+
+.service-item .content p {
+    color: #FFF;
+    padding: 0 50px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -100px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover .content p {
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}

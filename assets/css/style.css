@@ -8,6 +8,7 @@
 @import "shortcodes.css";
 @import "responsive.css";
 @import "animation.css";
+@import "map.min.css";
 @import "magnific-popup.min.css";
 @import "animate.min.css";
 @import "swiper-bundle.min.css";
@@ -925,6 +926,9 @@ h6 {
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-70 {
+    margin-bottom: 70px;
+}
 .divider {
     width: 100%;
     height: 1px;
@@ -938,6 +942,12 @@ h6 {
 }
 .e-resize {
     cursor: e-resize;
+}
+.auto-slide .swiper-slide {
+    width: auto;
+}
+.auto-slide  .swiper-wrapper {
+    transition-timing-function: linear;
 }
 #wrapper{
     position: relative;
@@ -986,6 +996,14 @@ a:focus {
 }
 
 .button-default i {
+    color: #C3A27C;
+}
+
+.button-default.style-white {
+    color: #FFF;
+}
+
+.button-default.style-white:hover {
     color: #C3A27C;
 }
 
@@ -1471,10 +1489,13 @@ a:focus {
 }
 
 .wg-blog .image {
-    margin-bottom: 15px;
     height: 100%;
     overflow: hidden;
     border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.wg-blog .image img {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -1482,9 +1503,8 @@ a:focus {
     transition: all 0.3s ease-in-out;
 }
 
-
-.wg-blog:hover .image {
-    height: 299px;
+.wg-blog:hover .image img {
+    margin-top: -90px;
 }
 
 .wg-blog .meta {
@@ -1525,7 +1545,7 @@ a:focus {
     margin-top: 0;
     opacity: 1;
     visibility: visible;
-    transition-delay: 1s;
+    transition-delay: 0.3s;
 }
 
 .wg-blog .bottom {

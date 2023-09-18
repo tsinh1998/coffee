@@ -91,12 +91,27 @@
       });
     };
 
+    var tabs = function(){
+      $('.widget-tabs').each(function(){
+          $(this).find('.widget-content-tab').children().hide();
+          $(this).find('.widget-content-tab').children(".active").show();
+          $(this).find('.widget-menu-tab').children('li').on('click',function(){
+              var liActive = $(this).index();
+              var contentActive=$(this).siblings().removeClass('active').parents('.widget-tabs').find('.widget-content-tab').children().eq(liActive);
+              contentActive.addClass('active').fadeIn("slow");
+              contentActive.siblings().removeClass('active');
+              $(this).addClass('active').parents('.widget-tabs').find('.widget-content-tab').children().eq(liActive).siblings().hide();
+          });
+      });
+  };
+
     // Dom Ready
     $(function () {
         btnmenu();
         video();
         counter();
         flatAccordion('.flat-accordion','.flat-toggle');
+        tabs(); 
     });
 
 })(jQuery);

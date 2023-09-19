@@ -923,6 +923,9 @@ h6 {
 .h-full {
     height: 100%;
 }
+.mt-50 {
+    margin-top: 50px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -948,6 +951,9 @@ h6 {
 }
 .auto-slide  .swiper-wrapper {
     transition-timing-function: linear;
+}
+.tf-color {
+    color: #C3A27C !important;
 }
 #wrapper{
     position: relative;
@@ -1446,6 +1452,20 @@ a:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.wg-update-wrap > .item-1 {
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+}
+
+.wg-update-wrap > .item-2 {
+    position: absolute;
+    bottom: -180px;
+    right: -44px;
 }
 
 .wg-update-wrap .title {

@@ -1236,6 +1236,20 @@ form textarea.style-2 {
     transform: translate(-50%,-50%);
 }
 
+/* style-1 */
+.customer-testimonial.style-1 {
+    background: #FFF;
+}
+
+.customer-testimonial.style-1 .swiper-wrapper {
+    padding-bottom: 100px;
+}
+
+.customer-testimonial-item.style-1 .name a,
+.customer-testimonial-item.style-1 p {
+    color: #171412;
+}
+
 /* partners */
 /* ------------------------- */
 .partners {
@@ -2330,3 +2344,337 @@ a.mapboxgl-ctrl-logo {
     background-color: #C3A27C;
 }
 
+/* wg-offer */
+/* ----------------------------------- */
+.wg-offer {
+    padding-bottom: 130px;
+}
+
+.wg-offer-item {
+    display: flex;
+    gap: 61px;
+    margin-bottom: 75px;
+}
+
+.wg-offer-item .image {
+    width: 100%;
+    min-width: 539px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wg-offer-item .content {
+    flex-grow: 1;
+}
+
+.wg-offer-item .content .title {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.wg-offer-item .content ul {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+}
+
+.wg-offer-item .content ul li {
+    padding-left: 20px;
+    font-family: 'CerebriSans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #171412;
+    position: relative;
+}
+
+.wg-offer-item .content ul li::before {
+    position: absolute;
+    content: url(../icon/coffee-2.svg);
+    top: 4px;
+    left: 0;
+    font-size: 10px;
+}
+
+.wg-offer-item .content p {
+    margin-bottom: 45px;
+}
+
+/* wg-our-team */
+/* ------------------------------------ */
+.wg-our-team {
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.our-team-item {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.our-team-item .image {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.our-team-item .name {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.our-team-item p {
+    color: #8c8c8c;
+    margin-bottom: 25px;
+}
+
+.widget-social.style-3 {
+    background-color: #C3A27C;
+    padding: 11px 27px;
+    width: max-content;
+    border-radius: 35px;
+    margin: auto;
+}
+
+.widget-social.style-3 a:hover {
+    color: #051028;
+}
+
+/* wg-portfolio */
+/* --------------------------------- */
+.wg-portfolio {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.wg-portfolio .wrap {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "aa aa bb cc"
+    "aa aa dd dd"
+    "ee ff gg gg"
+    ;
+    /* grid-template-areas: 
+    "aa aa"
+    "aa aa"
+    "bb cc"
+    "dd dd"
+    "ee ff"
+    "gg gg"
+    ;
+    grid-template-columns: repeat(2,1fr); */
+    grid-gap: 30px;
+}
+
+.coffee-post-item.style-1 {
+    border-radius: 10px;
+}
+
+.wg-portfolio .wrap .item-1 {
+    grid-area: aa;
+}
+
+.wg-portfolio .wrap .item-2 {
+    grid-area: bb;
+}
+
+.wg-portfolio .wrap .item-3 {
+    grid-area: cc;
+}
+
+.wg-portfolio .wrap .item-4 {
+    grid-area: dd;
+}
+
+.wg-portfolio .wrap .item-5 {
+    grid-area: ee;
+}
+
+.wg-portfolio .wrap .item-6 {
+    grid-area: ff;
+}
+
+.wg-portfolio .wrap .item-7 {
+    grid-area: gg;
+}
+
+/* wg-private */
+/* ------------------------------- */
+.wg-private {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    overflow: hidden;
+}
+
+.wg-private p {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.wg-private > .item-1 {
+    position: absolute;
+    bottom: -184px;
+    left: 0;
+}
+
+.wg-private > .item-2 {
+    position: absolute;
+    bottom: -156px;
+    right: 0px;
+}
+
+.private-item {
+    display: flex;
+}
+
+.private-item .right,
+.private-item .content {
+    width: 50%;
+}
+
+.private-item .content {
+    background-color: #faf1e3;
+    padding: 130px 140px 0px 130px;
+}
+
+.private-item .content .title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.private-item .content ul {
+    margin-top: 30px;
+}
+
+.private-item .content ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2d2723;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.private-item .content ul li i {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    color: #FFF;
+    background-color: #C3A27C;
+}
+
+.swiper-button {
+    position: absolute;
+    z-index: 5;
+    bottom: 27px;
+    left: 50%;
+    width: 112px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: #2d2723;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button > div {
+    position: unset;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+.swiper-button-prev.style-3::after {
+    font-family: 'icomoon';
+    content: '\ea40';
+    color: #969391;
+    font-size: 15px;
+}
+
+.swiper-button-next.style-3::after {
+    font-family: 'icomoon';
+    content: '\ea3c';
+    color: #969391;
+    font-size: 15px;
+}
+
+/* wg-wiews */
+/* --------------------------------- */
+.wg-wiew-item {
+    position: relative;
+}
+
+.wg-wiew-item::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(18 15 12 / 60%);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.wg-wiew-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+
+.wg-wiew-item .icon {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background-color: #C3A27C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.wg-wiew-item:hover .icon {
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s;
+}

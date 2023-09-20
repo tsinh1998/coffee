@@ -567,22 +567,28 @@ select {
     -moz-box-shadow: none;
     box-shadow: none;
     width: 100%;
-    padding: 20px 30px;
-    height: 60px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    line-height: 11px;
+    padding: 0px 17px;
+    height: 50px !important;
+    font-family: 'CerebriSans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
     border-radius: 10px;
-    background-color: #fff;
-    color: #696969;
+    background-color: #48433f;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 select option {
-    padding: 20px 30px;
     font-size: 16px;
     line-height: 11px;
     color: #696969;
     background-color: #fff;
+}
+
+select.style-1 {
+    background: #f1f1f1;
+    color      : #171412;
 }
 
 textarea,
@@ -615,6 +621,7 @@ input[type="color"] {
     line-height: 29px;
     font-family: 'CerebriSans';
     color      : #171412;
+    overflow: hidden;
 }
 
 /* Input focus */
@@ -753,6 +760,68 @@ input[type="tel"].style-2:focus,
 input[type="color"].style-2:focus {
     background-color      : #fff;
     border: 1px solid #c3a27c;
+}
+
+
+textarea.style-3,
+input[type="text"].style-3,
+input[type="password"].style-3,
+input[type="datetime"].style-3,
+input[type="datetime-local"].style-3,
+input[type="date"].style-3,
+input[type="month"].style-3,
+input[type="time"].style-3,
+input[type="week"].style-3,
+input[type="number"].style-3,
+input[type="email"].style-3,
+input[type="url"].style-3,
+input[type="search"].style-3,
+input[type="tel"].style-3,
+input[type="color"].style-3 {
+    background-color: #48433f;
+    color: #fff;
+    border: 1px solid #48433f;
+    margin-bottom: 15px;
+}
+
+textarea.style-3::placeholder,
+input[type="text"].style-3::placeholder,
+input[type="password"].style-3::placeholder,
+input[type="datetime"].style-3::placeholder,
+input[type="datetime-local"].style-3::placeholder,
+input[type="date"].style-3::placeholder,
+input[type="month"].style-3::placeholder,
+input[type="time"].style-3::placeholder,
+input[type="week"].style-3::placeholder,
+input[type="number"].style-3::placeholder,
+input[type="email"].style-3::placeholder,
+input[type="url"].style-3::placeholder,
+input[type="search"].style-3::placeholder,
+input[type="tel"].style-3::placeholder,
+input[type="color"].style-3::placeholder {
+    color      : #fff;
+}
+
+textarea.style-3:focus,
+input[type="text"].style-3:focus,
+input[type="password"].style-3:focus,
+input[type="datetime"].style-3:focus,
+input[type="datetime-local"].style-3:focus,
+input[type="date"].style-3:focus,
+input[type="month"].style-3:focus,
+input[type="time"].style-3:focus,
+input[type="week"].style-3:focus,
+input[type="number"].style-3:focus,
+input[type="email"].style-3:focus,
+input[type="url"].style-3:focus,
+input[type="search"].style-3:focus,
+input[type="tel"].style-3:focus,
+input[type="color"].style-3:focus {
+    border: 1px solid #c3a27c;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator::after {
+    color: #FFF;
 }
 
 /* Button */

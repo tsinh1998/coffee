@@ -25,6 +25,14 @@
     width: 1580px;
 }
 
+.themesflat-container.w1600 {
+    width: 1630px;
+}
+
+.themesflat-container.w700 {
+    width: 730px;
+}
+
 /* blog-single */
 /* ------------------------------------------------ */
 .blog-single .meta {
@@ -1287,6 +1295,24 @@ form textarea.style-2 {
     position: relative;
 }
 
+.product-item.sale-off .image::after {
+    position: absolute;
+    content: 'SALE OFF';
+    top: 25px;
+    right: 23px;
+    width: 97px;
+    height: 34px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #2d2723;
+    font-family: 'CerebriSans';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 .product-item .image img {
     margin-left: -77px;
 }
@@ -1354,6 +1380,18 @@ form textarea.style-2 {
 .rating i {
     font-size: 17px;
     color: #C3A27C;
+}
+
+/* style-1 */
+.product-item.style-1 .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 59px 0;
+}
+
+.product-item.style-1 .image img {
+    margin-left: 0;
 }
 
 /* wg-coffee-post */
@@ -2677,4 +2715,134 @@ a.mapboxgl-ctrl-logo {
     opacity: 1;
     visibility: visible;
     transition-delay: 0.3s;
+}
+
+/* book-table */
+/* ------------------------------ */
+.book-table {
+    padding-top: 150px;
+    padding-bottom: 135px;
+    background-image: url(../images/bg-section/bg-book-table.png);
+}
+
+.book-table .wrap {
+    display: flex;
+    gap: 30px 100px;
+}
+
+.book-table .image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: max-content;
+}
+
+.book-table .image::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 30%);
+}
+
+.book-table .image .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.book-table .content {
+    flex-grow: 1;
+}
+
+/* wg-reservation */
+/* ----------------------------------- */
+.wg-reservation {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.wg-reservation .item-1 {
+    position: absolute;
+    top: 50%;
+    left: 140px;
+    transform: translateY(-50%);
+}
+
+.wg-reservation .item-2 {
+    position: absolute;
+    top: 50%;
+    right: 140px;
+    transform: translateY(-50%);
+}
+
+.wg-reservation .wrap .icon {
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    background-color: #2d2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 43px;
+    color: #FFF;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.wg-reservation .wrap p {
+    color: #171412;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+select.style-1,
+.wg-reservation form input {
+    margin-bottom: 20px;
+}
+
+.wg-reservation form .bottom {
+    margin-top: 30px;
+}
+
+/* wg-shop */
+/* ---------------------------------- */
+.wg-shop .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.wg-shop .top > p {
+    color: #171412;
+    font-size: 17px;
+}
+
+.wg-shop .top .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select.style-2 {
+    margin-bottom: 0;
+    color: #171412;
+    background-color: #FFF;
+    border: 1px solid #C3A27C;
+    min-width: 193px;
+}
+
+.wg-shop .top .style-list {
+    margin-left: 30px;
+    margin-right: 23px;
+}
+
+.wg-shop .top .style-list,
+.wg-shop .top .style-grid {
+    cursor: pointer;
 }

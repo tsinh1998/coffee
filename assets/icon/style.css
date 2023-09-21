@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?wsrws2');
-  src:  url('fonts/icomoon.eot?wsrws2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?wsrws2') format('truetype'),
-    url('fonts/icomoon.woff?wsrws2') format('woff'),
-    url('fonts/icomoon.svg?wsrws2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?bpp40h');
+  src:  url('fonts/icomoon.eot?bpp40h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bpp40h') format('truetype'),
+    url('fonts/icomoon.woff?bpp40h') format('woff'),
+    url('fonts/icomoon.svg?bpp40h#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-shoppingcart:before {
+  content: "\e90b";
+}
+.icon-location:before {
+  content: "\e908";
+}
+.icon-chevrons-right:before {
+  content: "\e907";
+}
+.icon-star:before {
+  content: "\e92c";
+}
 .icon-send:before {
   content: "\e90a";
 }
@@ -70,17 +82,9 @@
 .icon-play3:before {
   content: "\ea1c";
 }
-.icon-location:before {
-  content: "\e908";
-}
-.icon-chevrons-right:before {
-  content: "\e907";
-}
-.icon-star:before {
-  content: "\e92c";
-}
 .icon-fb:before {
   content: "\e903";
+  color: #fff;
 }
 .icon-bread:before {
   content: "\e918";

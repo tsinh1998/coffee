@@ -103,7 +103,53 @@
               $(this).addClass('active').parents('.widget-tabs').find('.widget-content-tab').children().eq(liActive).siblings().hide();
           });
       });
-  };
+    };
+
+    var rangeslider = function () {
+      if ($("#range-two-val").length > 0) {
+        var skipSlider = document.getElementById("range-two-val");
+        var skipValues = [
+          document.getElementById("skip-value-lower"),
+          document.getElementById("skip-value-upper")
+        ];
+
+        noUiSlider.create(skipSlider, {
+          start: [20, 99],
+          connect: true,
+          behaviour: "drag",
+          step: 1,
+          range: {
+            min: 20,
+            max: 120
+          },
+          format: {
+            from: function (value) {
+              return parseInt(value);
+            },
+            to: function (value) {
+              return parseInt(value);
+            }
+          }
+        });
+
+        skipSlider.noUiSlider.on("update", function (values, handle) {
+          skipValues[handle].innerHTML = values[handle];
+        });
+      }
+    };
+
+    var styleshop = function() {
+      if ($('div').hasClass('wg-shop')) {
+        $('.button-list').on('click',function() {
+            $('.wg-shop-content').find('.col-xl-6').removeClass('col-xl-6').addClass('col-12');
+            $('.wg-shop-content').find('.product-item').addClass('style-list');
+          })
+        $('.button-grid').on('click',function() {
+            $('.wg-shop-content').find('.col-12').removeClass('col-12').addClass('col-xl-6');
+            $('.wg-shop-content').find('.product-item').removeClass('style-list');
+        })
+      }
+    };
 
     // Dom Ready
     $(function () {
@@ -112,6 +158,8 @@
         counter();
         flatAccordion('.flat-accordion','.flat-toggle');
         tabs(); 
+        rangeslider();
+        styleshop();
     });
 
 })(jQuery);

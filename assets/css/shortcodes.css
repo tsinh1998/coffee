@@ -1388,10 +1388,41 @@ form textarea.style-2 {
     align-items: center;
     justify-content: center;
     padding: 59px 0;
+    height: 444px;
 }
 
 .product-item.style-1 .image img {
     margin-left: 0;
+}
+
+/* style-list */
+.product-item.style-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.product-item.style-list .image {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.product-item.style-list .image img {
+    /* transform: scale(0.3); */
+    width: 300px;
+    margin-left: -50px;
+}
+
+.product-item.style-list .content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-item.style-list .price,
+.product-item.style-list .name {
+    margin-bottom: 0;
 }
 
 /* wg-coffee-post */
@@ -1616,7 +1647,7 @@ form textarea.style-2 {
     width: 100%;
 }
 
-.marker {
+#map .marker {
     background-image: url('../images/item-background/map-icon.png');
     background-size: cover;
     width: 35px;
@@ -2382,6 +2413,22 @@ a.mapboxgl-ctrl-logo {
     background-color: #C3A27C;
 }
 
+/* style-1 */
+.widget-tabs.style-1 .widget-menu-tab {
+    justify-content: start;
+    margin-bottom: 40px;
+}
+
+.widget-tabs.style-1 .widget-menu-tab::after {
+    width: 100%;
+}
+
+.widget-tabs.style-1 .widget-menu-tab .item-title {
+    color: #171412;
+}
+
+
+
 /* wg-offer */
 /* ----------------------------------- */
 .wg-offer {
@@ -2837,12 +2884,249 @@ select.style-2 {
     min-width: 193px;
 }
 
-.wg-shop .top .style-list {
+.wg-shop .top .button-list {
     margin-left: 30px;
     margin-right: 23px;
 }
 
-.wg-shop .top .style-list,
-.wg-shop .top .style-grid {
+.wg-shop .top .button-list,
+.wg-shop .top .button-grid {
     cursor: pointer;
 }
+
+/* cart-item */
+/* ------------------------------------ */
+.cart-item {
+    display: flex;
+    position: relative;
+    gap: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5dccf;
+    margin-bottom: 25px;
+}
+
+.cart-item.last {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.cart-item .image {
+    width: 76px;
+    height: 82px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item .image.style-1 {
+    display: unset;
+    padding-top: 28px;
+}
+
+.cart-item .image.style-1 img {
+    margin-left: -13px;
+}
+
+.cart-item .content {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+.cart-item .content .price {
+    margin-bottom: 10px;
+    color: #171412;
+    font-family: 'CerebriSans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.cart-item .content .price span {
+    color: #686868;
+    text-decoration-line: line-through;
+    margin-right: 20px;
+}
+
+.cart-item .content .name {
+    color: #171412;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.cart-item .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #181e26;
+    cursor: pointer;
+}
+
+.subtotal {
+    background-color: #2d2723;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.subtotal .price {
+    font-family: 'CerebriSans';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.subtotal .title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.subtotal svg {
+    width: 17px;
+    height: 17px;
+}
+
+.subtotal svg path {
+    fill : #C3A27C;
+}
+
+/* range-two-val */
+/* ----------------------------------- */
+#range-two-val {
+    height: 1px;
+    border: none;
+    background-color: #c8c8c8 !important;
+    margin-bottom: 40px;
+}
+
+.noUi-connect {
+    background: #2d2723 !important;
+    border-top: 1px solid #2d2723;
+}
+
+#range-two-val.noUi-horizontal .noUi-handle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #2d2723;
+    border: none;
+    box-shadow: none;
+    top: 0;
+    right: -9px;
+    transform: translate(-50%,-50%);
+}
+
+#range-two-val.noUi-horizontal .noUi-handle::before,
+#range-two-val.noUi-horizontal .noUi-handle::after {
+    display: none;
+}
+
+.noUi-handle:active {
+    width: 17px !important;
+    height: 17px !important;
+    border: 4px solid #C3A27C !important;
+    right: -17px !important;
+}
+
+/* side-bar */
+/* --------------------------------- */
+.side-bar-item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.side-bar-item > .title {
+    background-color: #2d2723;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 28px;
+}
+
+.side-bar-item > .content {
+    background-color: #faf1e3;
+    padding: 35px 23px 35px 30px;
+}
+
+.side-bar-item.categories ul li {
+    font-family: 'CerebriSans';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: #171412;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.side-bar-item.categories ul li:hover {
+    padding-left: 20px;
+}
+
+.side-bar-item.categories ul li::before {
+    position: absolute;
+    content: url(../icon/coffee-2.svg);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.side-bar-item.categories ul li:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.side-bar-item.filter .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-bar-item.filter .bottom > a {
+    padding: 0 36px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #C3A27C;
+    letter-spacing: 1px;
+}
+
+.side-bar-item.filter .total {
+    margin-bottom: 10px;
+    color: #171412;
+    font-family: 'CerebriSans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+

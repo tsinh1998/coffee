@@ -612,7 +612,7 @@ input[type="color"] {
     -webkit-box-shadow: none;
     -moz-box-shadow   : none;
     box-shadow        : none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 15px;
     width: 100%;
     height: 50px;
@@ -999,6 +999,18 @@ h6 {
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mb-68 {
+    margin-bottom: 68px;
+}
+.mb-26 {
+    margin-bottom: 26px;
+}
+.mb-55 {
+    margin-bottom: 55px;
+}
 .mb-70 {
     margin-bottom: 70px;
 }
@@ -1089,22 +1101,22 @@ a:focus {
     background-color: #c3a27c;
     color: #FFF;
     font-size: 15px;
-    letter-spacing: 1px;
-    padding: 0 47px;
-    border-radius: 10px;
+    letter-spacing: 2.5px;
+    padding: 0 38px 0 40px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .button-style-1:hover {
-    background-color: #051028;
+    background-color: #2D2723;
 }
 
 .button-reply {
     width: max-content;
     height: 33px;
-    padding: 0 20px;
+    padding: 0 18px 0 15px;
     background-color: #2D2723;
     border-radius: 5px;
     color: #FFF;
@@ -1112,7 +1124,8 @@ a:focus {
     align-items: center;
     gap: 7px;
     font-family: 'CerebriSans';
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 }
 
 .button-reply:hover {
@@ -1127,9 +1140,9 @@ a:focus {
     color: #FFF;
     font-size: 15px;
     font-weight: 600;
-    letter-spacing: 1px;
-    padding: 0 47px;
-    border-radius: 10px;
+    letter-spacing: 2px;
+    padding: 0 40px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1897,6 +1910,8 @@ input:checked ~ .btn-checkbox:after {
     padding-top: 24px;
     padding-bottom: 25px;
     display: flex;
+    row-gap: 15px;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -1905,7 +1920,7 @@ input:checked ~ .btn-checkbox:after {
 .widget-social {
     display: flex;
     align-items: center;
-    gap: 23px;
+    gap: 17px;
 }
 
 .widget-social ul {
@@ -1930,6 +1945,7 @@ input:checked ~ .btn-checkbox:after {
     width: 52px;
     height: 53px;
     transform: translate(-50%,-50%);
+    border-radius: 50%;
     padding: 17px;
     background-color: #2d2723;
 }
@@ -1942,13 +1958,13 @@ input:checked ~ .btn-checkbox:after {
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin-bottom: 10px;
     position: relative;
 }
 
 .heading-section .sub-before {
-    padding-left: 25px;
+    padding-left: 22px;
 }
 
 .heading-section.text-center .sub-before {
@@ -1958,19 +1974,19 @@ input:checked ~ .btn-checkbox:after {
 .heading-section .sub-before::before {
     position: absolute;
     content: url(../icon/coffee-2.svg);
-    top: -3px;
-    left: 0;
+    top: -4px;
+    left: -2px;
 }
 
 .heading-section.text-center .sub-before::before {
-    left: -28px;
+    left: -24px;
 }
 
 .heading-section .sub-after::after {
     position: absolute;
     content: url(../icon/coffee-2.svg);
-    top: -3px;
-    margin-left: 13px;
+    top: -4px;
+    margin-left: 9px;
 }
 
 .heading-section .main {
@@ -1979,6 +1995,8 @@ input:checked ~ .btn-checkbox:after {
     font-weight: 700;
     line-height: 58px;
     text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-top: 9px;
 }
 
 .heading-section.style-1 .main {

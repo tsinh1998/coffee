@@ -25,8 +25,8 @@
     width: 1580px;
 }
 
-.themesflat-container.w1600 {
-    width: 1630px;
+.themesflat-container.w1604 {
+    width: 1634px;
 }
 
 .themesflat-container.w700 {
@@ -39,9 +39,10 @@
     display: flex;
     margin-top: 127px;
     margin-bottom: 30px;
-    gap: 34px;
+    gap: 15px 34px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .blog-single .meta .meta-item {
@@ -115,7 +116,7 @@
     font-style: italic;
     font-weight: 400;
     color: #171412;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.15px;
 }
 
 .wg-blockquote .text {
@@ -207,7 +208,7 @@
 }
 
 .blog-single .bottom {
-    padding: 17px 0;
+    padding: 17px 0 18px;
     border-top: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
     display: flex;
@@ -215,7 +216,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
     margin-left: -5px;
 }
 
@@ -257,20 +258,26 @@
     line-height: 44px;
     font-weight: 600;
     color: #051028;
-    margin-bottom: 30px;
+    margin-bottom: 39px;
     text-transform: uppercase;
+    letter-spacing: 0.7px;
 }
 
 /* wg-comment */
 .wg-comment {
     position: relative;
     border-bottom: 1px solid #dedede;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
 }
 
 .wg-comment .author {
     display: flex;
-    gap: 20px;
+    gap: 21px;
+    margin-bottom: 18px;
+}
+
+.wg-comment p {
+    margin-bottom: 37px;
 }
 
 .wg-comment .author .image {
@@ -279,26 +286,29 @@
     border-radius: 50%;
     border: 1px solid #c3a27c;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .wg-comment .author .name {
     font-size: 15px;
     line-height: 22px;
     color: #171412;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-top: 8px;
 }
 
 .wg-comment .author .time {
     font-size: 13px;
     line-height: 19px;
     color: #666;
+    letter-spacing: 1.1px;
 } 
 
 .wg-comment > a {
     position: absolute;
-    right: 0;
-    top: 30px;
+    right: 1px;
+    top: 18px;
 }
 
 /* post-comment */
@@ -306,12 +316,17 @@
     margin-bottom: 134px;
 }
 
+.blog-single .post-comment .title-1 {
+    margin-bottom: 29px;
+}
+
 .post-comment .text {
     font-family: 'CerebriSans';
     font-size: 15px;
     line-height: 28px;
     color: #171412;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+    letter-spacing: 0.14px;
 }
 
 form .columns {
@@ -331,8 +346,8 @@ form textarea.style-2 {
 /* page-title */
 /* ------------------------------------ */
 .page-title {
-    padding-top: 375px;
-    padding-bottom: 250px;
+    padding-top: 371px;
+    padding-bottom: 259px;
     background-image: url(../images/bg-section/bg-home-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -345,7 +360,7 @@ form textarea.style-2 {
     content: '';
     width: 100%;
     height: 83px;
-    bottom: -57px;
+    bottom: -41px;
     left: 0;
     background-image: url(../images/bg-section/wave.png);
 }
@@ -376,7 +391,8 @@ form textarea.style-2 {
     text-align: center;
     font-size: 60px;
     font-weight: 700;
-    line-height: 89px;
+    line-height: 91px;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
 }
 
@@ -384,16 +400,18 @@ form textarea.style-2 {
     font-family: 'CerebriSans';
     font-size: 17px;
     line-height: 28px;
-    color: #FFF;
-    margin-bottom: 30px;
     text-align: center;
+    color: #FFF;
+    margin-bottom: 41px;
+    margin-top: 8px;
+    letter-spacing: 0.2px;
 }
 
 .page-title .content .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 /* home-2 */
@@ -510,8 +528,8 @@ form textarea.style-2 {
 /* wg-welcom */
 .wg-welcom {
     position: absolute;
-    bottom: 60px;
-    left: 15px;
+    top: 205px;
+    left: 6px;
     width: 403px;
     padding: 60px 40px 50px;
     background-color: #FFF;
@@ -537,9 +555,10 @@ form textarea.style-2 {
     color: #171412;
     font-size: 25px;
     font-weight: 700;
-    line-height: 37px;
+    line-height: 35px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 17px;
 }
 
 .wg-welcom .text {
@@ -552,7 +571,7 @@ form textarea.style-2 {
 
 .wg-welcom svg {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .wg-welcom .number-phone {
@@ -560,6 +579,7 @@ form textarea.style-2 {
     font-weight: 700;
     line-height: 37px;
     margin-bottom: 7px;
+    letter-spacing: 0.5px;
 }
 
 .wg-welcom .number-phone a {
@@ -613,11 +633,11 @@ form textarea.style-2 {
 /* wg-about */
 /* ------------------------------ */
 .wg-about {
-    padding-top: 125px;
-    padding-bottom: 140px;
+    padding-top: 112px;
+    padding-bottom: 135px;
     background-image: url(../images/bg-section/about-bg1.png);
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background-position: 100% 60%;
     background-color: #FFF;
     position: relative;
     z-index: 5;
@@ -625,8 +645,8 @@ form textarea.style-2 {
 
 .wg-about .wrap {
     display: flex;
-    padding-left: 135px;
-    padding-right: 145px;
+    padding-left: 136px;
+    padding-right: 134px;
 }
 
 .wg-about .image {
@@ -637,29 +657,33 @@ form textarea.style-2 {
 }
 
 .wg-about .content {
-    margin-top: 50px;
-    padding: 60px 75px 60px 80px;
+    margin-top: 49px;
+    padding: 53px 75px 60px 79px;   
     position: relative;
     z-index: 3;
     background-color: #FFF;
     border-top-left-radius: 10px;
 }
 
+.wg-about .content .heading-section {
+    margin-bottom: 27px;
+}
+
 .wg-about .content p {
-    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .wg-about .content > a {
-    margin-top: 40px;
+    margin-top: 43px;
 }
 
 .wg-about .hour-opening {
     min-width: 398px;
     height: max-content;
     margin-top: 78px;
-    padding: 50px 85px 50px 40px;
+    padding: 49px 86px 42px 37px;
     background-color: #2D2723;
-    border-radius: 15px;
+    border-radius: 10px;
     position: relative;
 }
 
@@ -667,7 +691,7 @@ form textarea.style-2 {
     position: absolute;
     content: '';
     background-color: #C3A27C;
-    border-radius: 10px;
+    border-radius: 15px;
     left: 29px;
     right: 29px;
     top: -16px;
@@ -680,8 +704,8 @@ form textarea.style-2 {
     font-size: 25px;
     font-weight: 700;
     line-height: 37px;
-    margin-bottom: 20px;
-    letter-spacing: 1PX;
+    margin-bottom: 19px;
+    letter-spacing: 1.7px;
 }
 
 .wg-about .hour-opening ul li {
@@ -693,6 +717,7 @@ form textarea.style-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 7px;
 }
 
 .wg-about .hour-opening ul li .active {
@@ -706,9 +731,9 @@ form textarea.style-2 {
 
 .wg-about .hour-opening ul li .line {
     flex-grow: 1;
-    height: 12px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 10px;
+    margin-left: 12px;
+    margin-right: 17px;
     border-bottom: 1px solid #57524f;
 }
 
@@ -738,10 +763,10 @@ form textarea.style-2 {
 .service-item::after {
     position: absolute;
     content: '';
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: 17px;
+    left: 18px;
+    right: 17px;
+    bottom: 17px;
     border: 1px solid #d8cbb6;
     border-radius: 10px;
     background-color: transparent;
@@ -762,12 +787,11 @@ form textarea.style-2 {
 .service-item::before {
     position: absolute;
     content: '';
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(2px);
-    background-color: rgba(18, 15, 12, 0.65);
+    background:linear-gradient(0deg,rgba(18, 15, 12,0.651),rgba(18, 15, 12,0));
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -776,7 +800,8 @@ form textarea.style-2 {
 }
 
 .service-item:hover::before {
-    top: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(18, 15, 12, 0.65);
 }
 
 .service-item .content {
@@ -785,7 +810,7 @@ form textarea.style-2 {
     left: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 41px;
     z-index: 5;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -797,10 +822,11 @@ form textarea.style-2 {
 .service-item:hover .content {
     bottom: 50%;
     transform: translateY(50%);
+    padding-bottom: 0;
 }
 
 .service-item .content > i {
-    font-size: 70px;
+    font-size: 87px;
     color: #f6e7d0;
 }
 
@@ -809,7 +835,9 @@ form textarea.style-2 {
     font-weight: 700;
     line-height: 44px;
     text-transform: uppercase;
+    letter-spacing: 2px;
     position: relative;
+    margin-top: 14px;
 }
 
 .service-item .content .title span {
@@ -841,6 +869,7 @@ form textarea.style-2 {
     opacity: 0;
     visibility: hidden;
     margin-top: -100px;
+    letter-spacing: 1px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -849,23 +878,24 @@ form textarea.style-2 {
 }
 
 .service-item:hover .content p {
-    margin-top: 0;
     opacity: 1;
     visibility: visible;
+    margin-top: 17px;
 }
 
 /* special-menu */
 /* ---------------------------------- */
 .special-menu {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 124px;
+    padding-bottom: 93px;
 }
 
 .special-menu-item {
-    padding: 20px;
+    padding: 0px 24px;
     display: flex;
     gap: 20px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .special-menu-item .image {
@@ -874,14 +904,14 @@ form textarea.style-2 {
 }
 
 .special-menu-item .content {
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 .special-menu-item .content .name {
     font-size: 22px;
     font-weight: 500;
     line-height: 33px;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
 }
 
 .special-menu-item .content .name a {
@@ -908,11 +938,21 @@ form textarea.style-2 {
     letter-spacing: 1px;
 }
 
+.special-menu-item .content p {
+    margin-top: 4px;
+    letter-spacing: 0.15px;
+}
+
+.special-menu-item.season {
+    margin-top: -55px;
+}
+
 .special-menu-item.season,
 .special-menu-item.new {
     border: 1px solid #2D2723;
-    border-top: 27px solid #2D2723;
+    border-top: 28px solid #2D2723;
     border-radius: 10px;
+    padding: 13px 24px 13px;
 }
 
 .special-menu-item.new::after {
@@ -969,31 +1009,34 @@ form textarea.style-2 {
 }
 
 .choose-us .content {
-    margin-top: 193px;
+    margin-top: 189px;
+    margin-left: 3px;
     flex-grow: 1;
 }
 
 .choose-us .content p {
     color: #FFF;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 27px;
     max-width: 645px;
 }
 
 .choose-us .content ul li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
     color: #C3A27C;
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    margin-bottom: 17px;
 }
 
 .choose-us .content ul li i {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #FFF;
     display: flex;
@@ -1005,22 +1048,27 @@ form textarea.style-2 {
 
 .choose-us .box-infor {
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 50%;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-51%); */
     background-color: #FFF;
     min-width: 300px;
     height: max-content;
-    padding: 40px 20px;
-    border-radius: 15px;
+    padding: 46px 28px 43px;
+    border-radius: 30px;
     z-index: 10;
+
+    top: 380px;
+
+    top: 146px;
+    left: -146px;
 }
 
 .counter-item {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     border-bottom: 1px solid rgba(200, 200, 200, 0.8);
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .choose-us .counter-item:last-child {
@@ -1030,7 +1078,7 @@ form textarea.style-2 {
 }
 
 .counter-item .icon i {
-    font-size: 70px;
+    font-size: 57px;
     color: #C3A27C;
     margin-bottom: 30px;
 }
@@ -1040,15 +1088,19 @@ form textarea.style-2 {
     font-size: 45px;
     font-weight: 700;
     line-height: 67px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    margin-bottom: 11px;
 }
 
 .counter-item .text {
     color: #171412;
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CerebriSans';
+    font-weight: 500;
     line-height: 22px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.4px;
 }
 
 .choose-us .image {
@@ -1058,7 +1110,7 @@ form textarea.style-2 {
 }
 
 .choose-us .image img {
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* style-1 */
@@ -1114,8 +1166,8 @@ form textarea.style-2 {
 /* private-event */
 /* ---------------------------------- */
 .private-event {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 135px;
+    padding-bottom: 222px;
 }
 
 .private-event .image {
@@ -1141,16 +1193,21 @@ form textarea.style-2 {
     z-index: 5;
 }
 
+.private-event .content {
+    padding-top: 18px;
+    padding-left: 2px;
+}
+
 .private-event .content > p {
     margin-bottom: 20px;
 }
 
 .private-event .content .flat-accordion {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 }
 
 .flat-accordion .flat-toggle {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
 }
 
 .flat-accordion .flat-toggle .toggle-title {
@@ -1158,8 +1215,9 @@ form textarea.style-2 {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    padding-left: 27px;
+    padding-left: 26px;
     text-transform: uppercase;
+    letter-spacing: 1px;
     position: relative;
 }
 
@@ -1178,7 +1236,7 @@ form textarea.style-2 {
 
 .flat-accordion .flat-toggle .toggle-content {
     display: none;
-    margin-top: 25px;
+    margin-top: 14px;
 }
 
 /* customer-testimonia */
@@ -1211,7 +1269,8 @@ form textarea.style-2 {
     text-align: center;
     max-width: 1170px;
     margin: auto;
-    margin-bottom: 30px;
+    letter-spacing: 0.35px;
+    margin-bottom: 35px;
 }
 
 .customer-testimonial-item .name {
@@ -1225,6 +1284,7 @@ form textarea.style-2 {
 
 .customer-testimonial-item .name a {
     color: #FFF;
+    letter-spacing: 1.7px;
 }
 
 .customer-testimonial-item .name a:hover {
@@ -1239,11 +1299,13 @@ form textarea.style-2 {
 
 .swiper-container .swiper-button-prev.style-2 {
     transform: rotate(180deg);
-    left: 160px;
+    left: 144px;
+    top: 27%;
 }
 
 .swiper-container .swiper-button-next.style-2 {
-    right: 160px;
+    right: 144px;
+    top: 27%;
 }
 
 .cup-coffee {
@@ -1281,7 +1343,7 @@ form textarea.style-2 {
     padding-left: 175px;
     padding-right: 185px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 76px;
     background-image: url(../images/box-item/bg-service.png);
     background-position: 0 90%;
 }
@@ -1296,18 +1358,18 @@ form textarea.style-2 {
 /* ---------------------------- */
 .our-product {
     padding-top: 130px;
-    padding-bottom: 130px;
+    padding-bottom: 136px;
 }
 
 .product-item {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .product-item .image {
-    padding-top: 85px;
+    padding-top: 82px;
     background-color: #f5f5f5;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     overflow: hidden;
     position: relative;
 }
@@ -1319,7 +1381,7 @@ form textarea.style-2 {
     right: 23px;
     width: 97px;
     height: 34px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #FFF;
     background-color: #2d2723;
     font-family: 'CerebriSans';
@@ -1331,7 +1393,10 @@ form textarea.style-2 {
 }
 
 .product-item .image img {
-    margin-left: -77px;
+    margin-left: -174px;
+    /* width: 509px; */
+    min-width: 509px;
+    height: 364px;
 }
 
 .product-item .image .icon {
@@ -1341,7 +1406,7 @@ form textarea.style-2 {
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1352,7 +1417,7 @@ form textarea.style-2 {
 }
 
 .product-item:hover .image .icon {
-    bottom: 10px;
+    bottom: 34px;
     opacity: 1;
     visibility: visible;
 }
@@ -1377,12 +1442,13 @@ form textarea.style-2 {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 
 .product-item .price span {
     color: #C8C8C8;
     text-decoration-line: line-through;
+    margin-right: 14px;
 }
 
 .product-item .name {
@@ -1391,12 +1457,14 @@ form textarea.style-2 {
     font-weight: 600;
     line-height: 33px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+    margin-bottom: 9px;
 }
 
 .rating i {
     font-size: 17px;
     color: #C3A27C;
+    margin: 0 -2px;
 }
 
 /* style-1 */
@@ -1534,7 +1602,7 @@ form textarea.style-2 {
 /* ---------------------------------- */
 .wg-news {
     padding-top: 130px;
-    padding-bottom: 80px;
+    padding-bottom: 51px;
 }
 
 .swiper-button-next.style-1 {
@@ -1545,7 +1613,8 @@ form textarea.style-2 {
     align-items: center;
     justify-content: center;
     background-color: #C3A27C;
-    right: -120px;
+    right: -107px;
+    top: 44%;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
@@ -1572,7 +1641,8 @@ form textarea.style-2 {
     align-items: center;
     justify-content: center;
     background-color: #C3A27C;
-    left: -120px;
+    left: -107px;
+    top: 44%;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
@@ -1611,7 +1681,7 @@ form textarea.style-2 {
 
 .wg-coffee-time .center {
     background-color: #faf1e3;
-    padding-top: 130px;
+    padding-top: 125px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1635,11 +1705,15 @@ form textarea.style-2 {
     margin-bottom: 5px;
 }
 
+.wg-coffee-time .center .text.s1 {
+    margin-bottom: 15px;
+}
+
 .wg-coffee-time .center .number-phone {
     font-size: 35px;
     font-weight: 700;
     line-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .wg-coffee-time .center .number-phone a {

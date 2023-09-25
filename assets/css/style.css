@@ -993,17 +993,29 @@ h6 {
 .h-full {
     height: 100%;
 }
+.mt-0 {
+    margin-top: 0!important;
+}
 .mt-50 {
     margin-top: 50px;
 }
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-27 {
+    margin-bottom: 27px;
+}
 .mb-35 {
     margin-bottom: 35px;
 }
 .mb-68 {
     margin-bottom: 68px;
+}
+.mb-66 {
+    margin-bottom: 66px;
+}
+.mb-63 {
+    margin-bottom: 63px;
 }
 .mb-26 {
     margin-bottom: 26px;
@@ -1013,6 +1025,12 @@ h6 {
 }
 .mb-70 {
     margin-bottom: 70px;
+}
+.mb-77 {
+    margin-bottom: 77px;
+}
+.mb-113 {
+    margin-bottom: 113px;
 }
 .divider {
     width: 100%;
@@ -1332,6 +1350,7 @@ a:focus {
 /* wg-bag */
 .wg-bag {
     position: relative;
+    cursor: pointer;
 }
 
 .wg-bag .number {
@@ -1560,6 +1579,11 @@ a:focus {
     color: #C3A27C;
 }
 
+.banner-page.menu-page {
+    padding-top: 305px;
+    padding-bottom: 57px;
+}
+
 /* wg-update */
 .wg-update {
     padding-top: 130px;
@@ -1766,7 +1790,7 @@ a:focus {
 .footer {
     background-color: #2d2723;
     padding-top: 122px;
-    margin-bottom: 90px;
+    margin-bottom: 192px;
     position: relative;
     overflow: hidden;
 }
@@ -2320,4 +2344,66 @@ input:checked ~ .btn-checkbox:after {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
+}
+
+/* header-2 */
+.header-2 {
+    position: relative;
+}
+
+.header-2 #site-logo {
+    left: 10%;
+}
+
+.header-2 > .top {
+    background-image: url(../images/bg-section/heade2-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-2 > .top .header-top {
+    margin-bottom: 50px;
+}
+
+.header-2 > .top .information {
+    display: flex;
+    gap: 15px 55px;
+}
+
+.header-2 > .top .wg-information p {
+    color: #171412;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.widget-social.style-4 ul {
+    gap: 13px;
+}
+
+.widget-social.style-4 ul li a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #C3A27C;
+    background-color: #FFF;
+    color: #171412;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-social.style-4 ul li a:hover {
+    color: #FFF;
+    background-color: #C3A27C;
+}
+
+.header-2 > .header-inner {
+    background-image: url(../images/bg-section/heade2-2.png);
+    margin-top: -20px;
+}
+
+.header-2 .header-inner-wrap {
+    background-color: unset;
+    max-width: 1230px
 }

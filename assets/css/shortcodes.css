@@ -1779,6 +1779,7 @@ form textarea.style-2 {
     cursor: pointer;
 }
 
+.mapboxgl-ctrl-attrib a,
 .mapboxgl-ctrl-attrib.mapboxgl-compact,
 a.mapboxgl-ctrl-logo {
     display: none !important;
@@ -2279,11 +2280,20 @@ a.mapboxgl-ctrl-logo {
     transform: translateY(-50%);
 }
 
+/* wg-map */
+.wg-map {
+    padding-top: 122px;
+}
+
+.wg-map .wrap {
+    height: 533px;
+}
+
 /* wg-contact-us */
 /* ------------------------------- */
 .wg-contact-us {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 121px;
+    padding-bottom: 135px;
 }
 
 .wg-contact-us .left {
@@ -2295,36 +2305,48 @@ a.mapboxgl-ctrl-logo {
     font-weight: 700;
     font-size: 45px;
     line-height: 55px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
 }
 
 .wg-contact-us .left > p {
     color: #171412;
-    margin-bottom: 15px;
+    margin-bottom: 41px;
+    letter-spacing: 0.15px;
+}
+
+.wg-contact-us form input {
+    margin-bottom: 20px;
+}
+
+.wg-contact-us form textarea {
+    height: 174px !important;
 }
 
 .wg-contact-us form button.style-submit {
     font-weight: 600;
+    letter-spacing: 2.2px;
 }
 
 .wg-contact-us form button.style-submit i {
-    margin-left: 15px;
+    margin-left: 12px;
 }
 
 .grid-contact-item {
-    margin-top: 75px;
+    margin-top: 82px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 45px 30px;
+    grid-gap: 42px 30px;
 }
 
 .contact-item .icon {
     width: 53px;
     height: 53px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #C3A27C;
     color: #FFF;
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -2335,7 +2357,7 @@ a.mapboxgl-ctrl-logo {
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -2349,13 +2371,20 @@ a.mapboxgl-ctrl-logo {
     color: #C3A27C;
 }
 
+.contact-item > .widget-social {
+    margin-top: 17px;
+}
+
 /* wg-menu */
 /* -------------------------------------- */
 .wg-menu {
     padding-top: 137px;
-    padding-bottom: 130px;
+    padding-bottom: 138px;
     position: relative;
     background-image: url(../images/bg-section/bg-menu-item.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
 }
 
 .wg-menu > .item-1 {
@@ -2478,8 +2507,8 @@ a.mapboxgl-ctrl-logo {
 /* cake-bakery */
 /* ------------------------------------ */
 .cake-bakery {
-    padding-top: 121px;
-    padding-bottom: 126px;
+    padding-top: 113px;
+    padding-bottom: 111px;
 }
 
 .cake-bakery .heading-section p {
@@ -2500,10 +2529,18 @@ a.mapboxgl-ctrl-logo {
     top: -7px;
 }
 
+.cake-bakery-item {
+    margin-bottom: 15px;
+}
+
 .cake-bakery-item .image {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+}
+
+.cake-bakery-item .image img {
+    width: 100%;
 }
 
 .cake-bakery-item .image .price {
@@ -2995,21 +3032,21 @@ a.mapboxgl-ctrl-logo {
 /* ----------------------------------- */
 .wg-reservation {
     position: relative;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 135px;
+    padding-bottom: 137px;
 }
 
 .wg-reservation .item-1 {
     position: absolute;
-    top: 50%;
-    left: 140px;
+    top: 54%;
+    left: 120px;
     transform: translateY(-50%);
 }
 
 .wg-reservation .item-2 {
     position: absolute;
-    top: 50%;
-    right: 140px;
+    top: 52%;
+    right: 118px;
     transform: translateY(-50%);
 }
 
@@ -3021,16 +3058,19 @@ a.mapboxgl-ctrl-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 43px;
+    font-size: 65px;
     color: #FFF;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .wg-reservation .wrap p {
     color: #171412;
     margin-bottom: 40px;
     text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
 }
 
 select.style-1,
@@ -3039,7 +3079,7 @@ select.style-1,
 }
 
 .wg-reservation form .bottom {
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
 /* wg-shop */

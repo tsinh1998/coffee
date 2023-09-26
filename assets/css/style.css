@@ -1534,6 +1534,7 @@ a:focus {
     font-size: 40px;
     font-weight: 400;
     line-height: 65px;
+    text-transform: capitalize;
 }
 
 .banner-page .heading {
@@ -1580,8 +1581,27 @@ a:focus {
 }
 
 .banner-page.menu-page {
-    padding-top: 305px;
+    padding-top: 303px;
     padding-bottom: 57px;
+    background-image: url(../images/bg-section/bg-menu.jpg);
+}
+
+.banner-page.reservation-page {
+    padding-top: 303px;
+    padding-bottom: 57px;
+    background-image: url(../images/bg-section/bg-reservation.jpg);
+}
+
+.banner-page.contact-page {
+    padding-top: 303px;
+    padding-bottom: 57px;
+    background-image: url(../images/bg-section/bg-contact.jpg);
+}
+
+.banner-page.about-page {
+    padding-top: 303px;
+    padding-bottom: 57px;
+    background-image: url(../images/bg-section/bg-about.jpg);
 }
 
 /* wg-update */

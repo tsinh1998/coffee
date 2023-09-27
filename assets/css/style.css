@@ -558,7 +558,32 @@ select{
 
 .select {
     position: relative;
-    overflow: hidden;
+}
+
+.select::after {
+    position: absolute;
+    content: '\e904';
+    right: 10px;
+    top: 46%;
+    width: 20px;
+    height: 20px;
+    font-family: 'icomoon' ;
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.select.t1::after {
+    color: #171412;
 }
 
 select {
@@ -578,6 +603,7 @@ select {
     background-color: #48433f;
     color: #fff;
     margin-bottom: 15px;
+    position: relative;
 }
 
 select option {
@@ -585,6 +611,7 @@ select option {
     line-height: 11px;
     color: #696969;
     background-color: #fff;
+    text-transform: capitalize;
 }
 
 select.style-1 {
@@ -1604,6 +1631,22 @@ a:focus {
     background-image: url(../images/bg-section/bg-about.jpg);
 }
 
+.banner-page.offer-page {
+    background-image: url(../images/bg-section/bg-offer.jpg);
+}
+
+.banner-page.team-page {
+    background-image: url(../images/bg-section/bg-our-team.jpg);
+}
+
+.banner-page.portfolio-page {
+    background-image: url(../images/bg-section/bg-portfolio.jpg);
+}
+
+.banner-page.event-page {
+    background-image: url(../images/bg-section/bg-private-event.jpg);
+}
+
 /* wg-update */
 .wg-update {
     padding-top: 130px;
@@ -1613,6 +1656,7 @@ a:focus {
 .wg-update-wrap {
     padding: 66px 0 75px;
     text-align: center;
+    border-radius: 10px;
     background: url(../images/bg-section/wg-update.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -1661,6 +1705,15 @@ a:focus {
     position: absolute;
     top: 0;
     right: 7px;
+}
+
+.wg-update.type-1 {
+    padding-top: 124px;
+    padding-bottom: 136px;
+}
+
+.wg-update.type-1 .wg-update-wrap {
+    padding-bottom: 77px;
 }
 
 /* wg-blog */
@@ -2383,7 +2436,7 @@ input:checked ~ .btn-checkbox:after {
 }
 
 .header-2 > .top .header-top {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
 }
 
 .header-2 > .top .information {
@@ -2395,6 +2448,10 @@ input:checked ~ .btn-checkbox:after {
     color: #171412;
     margin-top: 0;
     margin-bottom: 8px;
+}
+
+.header-2 .menu-primary-menu li a {
+    line-height: 83px;
 }
 
 .widget-social.style-4 ul {
@@ -2421,9 +2478,11 @@ input:checked ~ .btn-checkbox:after {
 .header-2 > .header-inner {
     background-image: url(../images/bg-section/heade2-2.png);
     margin-top: -20px;
+    padding-top: 15px;
 }
 
 .header-2 .header-inner-wrap {
     background-color: unset;
-    max-width: 1230px
+    max-width: 1230px;
+    height: 84px;
 }

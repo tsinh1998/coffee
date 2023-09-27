@@ -90,7 +90,7 @@
                                 <li class="menu-item">
                                     <a href="menu.html">Menu</a>
                                 </li>
-                                <li class="menu-item current-menu-item">
+                                <li class="menu-item">
                                     <a href="reservation.html">Reservation</a>
                                 </li>
                             </ul>
@@ -105,11 +105,11 @@
                         </div><!-- /logo -->
                         <nav class="main-nav right">
                             <ul class="menu-primary-menu">
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item menu-item-has-children current-menu-item">
                                     <a href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="about.html">About</a></li>
-                                        <li class="menu-item"><a href="offer.html">Offer</a></li>
+                                        <li class="menu-item current-item"><a href="offer.html">Offer</a></li>
                                         <li class="menu-item"><a href="team.html">Our Team</a></li>
                                         <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
                                         <li class="menu-item"><a href="event.html">Private Event</a></li>
@@ -205,14 +205,14 @@
                                 <li class="menu-item">
                                     <a class="item-menu-mobile" href="menu.html">Menu</a>
                                 </li>
-                                <li class="menu-item current-menu-item">
+                                <li class="menu-item">
                                     <a class="item-menu-mobile" href="reservation.html">Reservation</a>
                                 </li>
-                                <li class="menu-item menu-item-has-children-mobile">
+                                <li class="menu-item menu-item-has-children-mobile current-menu-item">
                                     <a class="item-menu-mobile">Pages</a>
                                     <ul class="sub-menu-mobile">
                                         <li class="menu-item"><a href="about.html">About</a></li>
-                                        <li class="menu-item"><a href="offer.html">Offer</a></li>
+                                        <li class="menu-item current-item"><a href="offer.html">Offer</a></li>
                                         <li class="menu-item"><a href="team.html">Our Team</a></li>
                                         <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
                                         <li class="menu-item"><a href="event.html">Private Event</a></li>
@@ -319,20 +319,23 @@
             <!-- /header -->
 
             <!-- banner-page -->
-            <div class="banner-page reservation-page">
+            <div class="banner-page offer-page">
                 <img class="item-1" src="assets/images/bg-section/cup.png" alt="">
                 <img class="item-2" src="assets/images/bg-section/cup-1.png" alt="">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="text">- Online Reservation -</div>
-                            <div class="heading">book a table</div>
+                            <div class="text">- daily deals for coffee lovers -</div>
+                            <div class="heading">special offer</div>
                             <ul class="breadcrumbs">
                                 <li class="item">
                                     <a href="index.html">Home</a>
                                 </li>
+                                <li class="item">
+                                    <a href="#">pages</a>
+                                </li>
                                 <li class="active">
-                                    <a href="#">Reservation</a>
+                                    <a href="#">special offer</a>
                                 </li>
                             </ul>
                         </div>
@@ -341,46 +344,22 @@
             </div>
             <!-- /banner-page -->
 
-           <!-- wg-reservation -->
-           <div class="wg-reservation">
-                <img class="item-1" src="assets/images/item-background/snacks-1.png" alt="">
-                <img class="item-2" src="assets/images/item-background/cup.png" alt="">
-                <div class="themesflat-container w700">
+            <!-- wg-update -->
+            <div class="wg-update type-1">
+                <div class="themesflat-container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="wrap">
-                                <div class="icon"><i class="icon-coffee-cup2"></i></div>
-                                <p>After booking we will call the customer to confirm, <br> so please enter your name and phone number is required, thank you!</p>
-                                <form class="comment-form type-1">
-                                    <div class="columns">
-                                        <fieldset class="name">
-                                            <input type="text" placeholder="Name*" class="style-2" name="name" tabindex="2" value="" aria-required="true" required="">
-                                        </fieldset>
-                                        <fieldset class="number">
-                                            <input type="text" placeholder="Phone*" class="style-2" name="text" tabindex="2" value="" aria-required="true" required="">
-                                        </fieldset>
-                                    </div>
-                                    <div class="columns">
-                                        <fieldset class="select t1 event-time">
-                                            <select class="style-1">
-                                                <option value="Subject" selected>Arrival time</option>
-                                                <option value="Subject">6:00 AM</option>
-                                                <option value="Subject">6:00 PM</option>
-                                            </select>
-                                        </fieldset>
-                                        <fieldset class="select t1 event-number">
-                                            <select class="style-1">
-                                                <option value="Subject" selected>People</option>
-                                                <option value="Subject">5</option>
-                                                <option value="Subject">10</option>
-                                            </select>
-                                        </fieldset>
-                                        <fieldset class="date">
-                                            <input type="date" placeholder="date*" class="style-2" name="date" tabindex="2" value="2023-09-18" aria-required="true" required="">
-                                        </fieldset>
-                                    </div>
-                                    <div class="bottom">
-                                        <button class="m-auto button-style-1" type="submit">BOOK A TABLE</button>
+                            <div class="wg-update-wrap">
+                                <img class="item-1" src="assets/images/item-background/item-7.png" alt="">
+                                <img class="item-2" src="assets/images/item-background/item-8.png" alt="">
+                                <div class="title">Sign up to receive <br> news about the latest offers!</div>
+                                <div class="text">we will send you offers about discounts or gifts, you just need to enter your email to follow the offer, thank<br>you for using basilico coffee products, we look forward to you every day</div>
+                                <form class="comment-form">
+                                    <fieldset class="email">
+                                        <input type="email" id="email" placeholder="Email address..." class="" name="email" tabindex="2" value="" aria-required="true" required="">
+                                    </fieldset>
+                                    <div class="">
+                                        <button class="" type="submit"><i class="icon-send"></i></button>
                                     </div>
                                 </form>
                             </div>
@@ -388,31 +367,60 @@
                     </div>
                 </div>
             </div>
-            <!-- /wg-reservation -->
+            <!-- /wg-update -->
 
-            <!-- wg-coffee-time --> 
-            <div class="wg-coffee-time">
-                <div class="left">
-                    <img src="assets/images/box-item/coffee-time.jpg" alt="">
-                </div>
-                <div class="center">
-                    <div class="heading-section text-center mb-35">
-                        <span class="sub sub-before sub-after">location</span>
-                        <div class="main">how to find us?</div>
+            <!-- wg-offer -->
+            <div class="wg-offer">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="wg-offer-item">
+                                <div class="image">
+                                    <img src="assets/images/box-item/offer-1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title"><a href="#">TAKE A JOURNEY THROUGH THE WORLD OF FINE DAMMANN FRERES TEA</a></div>
+                                    <ul>
+                                        <li>Time Takes Place: 10/08/2022 - 10/09/2022</li>
+                                        <li>Use code BASILICO15 for 15% savings </li>
+                                    </ul>
+                                    <p>Enjoy special savings as shown in cart on your order at illy.com. Use code DAMMANN15 & save 15% on all Dammann Freres Tea products. Offer is only eligible on Dammann Freres Tea. Offer not valid for new or recurring coffee deliveries as part of illy a casa coffee.</p>
+                                    <a href="#" class="button-style-1">ORDER NOW</a>
+                                </div>
+                            </div>
+                            <div class="wg-offer-item style-1 row-reverse">
+                                <div class="image">
+                                    <img src="assets/images/box-item/offer-2.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title"><a href="#">EXCLUSIVE STUDENT SAVINGS: 25% OFF SITEWIDE</a></div>
+                                    <ul>
+                                        <li>Time Takes Place: 10/08/2022 - 10/09/2022</li>
+                                        <li>Verify your student status to receive your student discount today.</li>
+                                    </ul>
+                                    <p>Enjoy special savings as shown in cart on your order at illy.com. Use code DAMMANN15 & save 15% on all Dammann Freres Tea products. Offer is only eligible on Dammann Freres Tea. Offer not valid for new or recurring coffee deliveries as part of illy a casa coffee.</p>
+                                    <a href="#" class="button-style-1">ORDER NOW</a>
+                                </div>
+                            </div>
+                            <div class="wg-offer-item style-1 m-0">
+                                <div class="image">
+                                    <img src="assets/images/box-item/offer-3.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="title"><a href="#">BUY 2 GET 1 FREE X 10 YEARS OF OPENING</a></div>
+                                    <ul>
+                                        <li>Time Takes Place: 10/08/2022 - 10/09/2022</li>
+                                        <li>Everyone enjoys the discount</li>
+                                    </ul>
+                                    <p>Enjoy special savings as shown in cart on your order at illy.com. Use code DAMMANN15 & save 15% on all Dammann Freres Tea products. Offer is only eligible on Dammann Freres Tea. Offer not valid for new or recurring coffee deliveries as part of illy a casa coffee.</p>
+                                    <a href="#" class="button-style-1">ORDER NOW</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text">call us book a table & delivery:</div>
-                    <div class="number-phone"><a href="tel:734 665 1852">(734) 665-1852</a></div>
-                    <div class="text s1">information coffee house:</div>
-                    <p>4517 Washington Ave. Manchester, Kentucky 39495, USA</p>
-                    <p><a href="mailto:Basilicofood123@gmail.com">Basilicofood123@gmail.com</a></p>
-                    <p>Mon - Fri : 9.00am - 22.00pm, Holidays : Close</p>
-                    <a href="#" class="button-style-2 m-auto">GET DIRECTIONS</a>
-                </div>
-                <div class="right relative">
-                    <div id="map"></div>
                 </div>
             </div>
-            <!-- /wg-coffee-time --> 
+            <!-- /wg-offer -->
 
             <!-- footer -->
             <footer id="footer" class="footer">
@@ -534,8 +542,6 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/countto.js"></script>
-    <script src="assets/js/map.min.js"></script>
-    <script src="assets/js/map.js"></script>
     <script src="assets/js/nouislider.min.js"></script>
     <script src="assets/js/magnific-popup.min.js"></script>
     <script src="assets/js/wow.min.js"></script>

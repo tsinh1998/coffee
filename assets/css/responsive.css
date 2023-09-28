@@ -6,20 +6,90 @@
     .choose-us.style-1.type-2 .img-right {
         margin-right: 94px;
     }
+    .wg-wiew-item img,
     .private-item .right img {
-        height: unset;
+        height: unset !important;
     }
     .private-item .content {
-        padding: 30px 15px 0px 15px !important;
+        padding: 15px 15px 0px 15px !important;
     }
     .book-table .wrap {
         gap: 30px;
     }
+    .wg-shop-detail .content-inner {
+        padding-left: 0;
+    }
+    .wg-404 .content {
+        padding-top: 50px;
+    }
+    .wg-about .wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .wg-about .content {
+        padding: 30px 30px 0 30px;
+    }
+    .wg-welcom {
+        display: none;
+    }
+    .choose-us {
+        background-size: cover;
+    }
+    .choose-us .content {
+        margin-top: 89px;
+        margin-right: 15px;
+    }
+    .right .coffee-post-item .image img, 
+    .left .coffee-post-item .image img {
+        height: unset;
+    }
+    .wg-banner-item {
+        padding: 40px;
+    }
+    .wg-banner-coffee .bottom {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-2 #site-logo {
+        left: 85px;
+    }
+    .header-2 > .top,
+    .header-2 > .header-inner {
+        padding-left: 150px;
+    }
 }
 
 @media (max-width: 1200px) {
+    .header-2 > .top .information {
+        gap: 15px;
+    }
+    .wg-banner-coffee .row > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .choose-us.style-1 .content {
+        margin-right: 0;
+    }
+    .choose-us .wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .wg-about .wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .wg-about .image ,
+    .wg-about .content {
+        width: 50%;
+    }
+    .private-item .content .title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
     .header-inner-wrap {
-        padding-left: 30px;
+        padding-left: 40px;
         padding-right: 42px;
     }
     .main-nav.left {
@@ -42,21 +112,38 @@
     }
     .book-table .wrap {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .book-table .wrap > div:first-child {
         order: 1;
-        width: 48%;
+        width: 47%;
     }
     .book-table .wrap > div:last-child {
         order: 2;
-        width: 48%;
+        width: 47%;
     }
     .book-table .wrap > .content {
         order: 3;
     }
+    .wg-banner-coffee .top img {
+        height: 400px;
+    }
 }
 
 @media (max-width: 1024px) {
+    .header-2 .widget-social {
+        display: none;
+    }
+    .choose-us .image {
+        width: unset;
+    }
+    .private-item {
+        flex-wrap: wrap;
+    }
+    .private-item .right, 
+    .private-item .content {
+        width: 100%;
+    }
     .header-right {
         gap: 30px;
     }
@@ -83,6 +170,10 @@
     }
     .wg-portfolio .wrap {
         grid-gap: 15px;
+    }
+    .coffee-post-item .content .name {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
@@ -112,9 +203,25 @@
         margin-right: 0;
         padding-right: 0;
     }
-    .coffee-post-item .content .name {
-        font-size: 16px;
-        line-height: 20px;
+    .wg-about .image ,
+    .wg-about .content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .wg-coffee-post {
+        flex-wrap: wrap;
+    }
+    .wg-coffee-post > div {
+        width: 100%;
+    }
+    .choose-us.style-1 .image {
+        width: unset;
+    }
+    .wg-reservation .item-1,
+    .wg-reservation .item-2 {
+        display: none;
     }
 }
 
@@ -122,9 +229,21 @@
     .wg-offer-item {
         flex-wrap: wrap;
     }
+    .product-item .image img {
+        margin-left: -240px;
+    }
+    .cart-item {
+        flex-wrap: wrap;
+        row-gap: 0px;
+    }
 }
 
 @media (max-width: 768px) {
+    .wg-about .hour-opening,
+    .wg-about .image {
+        min-width: unset;
+        width: 100%;
+    }
     .wg-coffee-time {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -142,16 +261,92 @@
     .choose-us.style-1.type-2 .img-right {
         min-width: unset;
     }
+    .wg-private > .item-2,
+    .wg-private > .item-1,
     .wg-testimonial.style-1 > .item-3,
     .wg-testimonial.style-1 > .item-2,
     .wg-testimonial.style-1 > .item-1 {
         display: none;
+    }
+    .wg-banner-coffee .top img {
+        height: 300px;
     }
 }
 
 @media (max-width: 700px) {
     br {
         display: none;
+    }
+    .wg-reservation form .columns {
+        flex-wrap: wrap;
+    }
+    .wg-reservation form  input.style-2 {
+        margin-bottom: 40px !important;
+    }
+    .header-2 > .header-inner {
+        padding: 80px 0 80px 150px;
+    }
+    .wg-banner-coffee .top img {
+        height: 200px;
+    }
+    .choose-us.style-1 .right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .choose-us .right .box-infor {
+        width: 100%;
+    }
+    .choose-us .right {
+        padding-left: 0;
+    }
+    .choose-us .right .box-infor {
+        position: unset;
+        margin-bottom: 15px;
+    }
+    .private-event .image {
+        width: unset;
+        height: unset;
+    }
+    .private-event .image img {
+        position: unset !important;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .product-item.style-list {
+        flex-wrap: wrap;
+    }
+    .product-item.style-list .image {
+        width: 100% !important;
+    }
+    .side-bar {
+        margin-top: 15px;
+    }
+    .product-item .image img {
+        margin-left: -174px;
+    }
+    .wg-404 .title img {
+        width: 200px;
+    }
+    .wg-404 .title::before {
+        transform: translateX(-175px);
+        top: 0;
+        font-size: 165px;
+    }
+    .wg-404 .title::after {
+        transform: translateX(175px);
+        top: 0;
+        font-size: 165px;
+    }
+    .wg-shop-detail .images .image-top img {
+        margin-left: -60px;
+        min-width: unset;
+    }
+    .wg-shop-detail .images .image-bottom {
+        gap: 15px;
+    }
+    .book-table .wrap > div:first-child ,
+    .book-table .wrap > div:last-child {
+        width: 100%;
     }
     .coffee-post-item.style-1 .content {
         top: 50%;

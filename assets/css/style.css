@@ -1044,6 +1044,9 @@ h6 {
 .mb-63 {
     margin-bottom: 63px;
 }
+.mb-62 {
+    margin-bottom: 62px;
+}
 .mb-26 {
     margin-bottom: 26px;
 }
@@ -1220,6 +1223,7 @@ a:focus {
 }
 
 .wg-information .icon {
+    min-width: 49px;
     width: 49px;
     height: 49px;
     border-radius: 50%;
@@ -1360,6 +1364,10 @@ a:focus {
 
 .header-search .top-search.active {
     display: block;
+}
+
+.header-search > a.active .icon-search::before {
+    content: url(../images/close.svg);
 }
 
 .search-form button {
@@ -1540,8 +1548,8 @@ a:focus {
     content: '';
     left: 0px;
     top: 0px;
-    width: 1920px;
-    height: 639px;
+    width: 100%;
+    height: 100%;
 }
 
 .banner-page::after {
@@ -1645,6 +1653,10 @@ a:focus {
 
 .banner-page.event-page {
     background-image: url(../images/bg-section/bg-private-event.jpg);
+}
+
+.banner-page.shop-page {
+    background-image: url(../images/bg-section/bg-shop.jpg);
 }
 
 /* wg-update */
@@ -2172,7 +2184,6 @@ input:checked ~ .btn-checkbox:after {
     margin-bottom: 30px;
 }
 
-
 /*Header fixed
 -------------------------------- */
 .header.is-fixed .header-inner {
@@ -2425,7 +2436,9 @@ input:checked ~ .btn-checkbox:after {
 }
 
 .header-2 #site-logo {
-    left: 10%;
+    left: 238px;
+    top: 121px;
+    z-index: 5;
 }
 
 .header-2 > .top {
@@ -2433,29 +2446,45 @@ input:checked ~ .btn-checkbox:after {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.header-2 > .top::before {
+    position: absolute;
+    bottom: 6px;
+    right: -9px;
+    content: url(../images/item-background/header-2.png);
 }
 
 .header-2 > .top .header-top {
-    margin-bottom: 43px;
+    margin-top: 34px;
+    margin-bottom: 56px;
+    row-gap: 15px;
 }
 
 .header-2 > .top .information {
     display: flex;
-    gap: 15px 55px;
+    gap: 15px 60px;
 }
 
 .header-2 > .top .wg-information p {
     color: #171412;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
+    letter-spacing: 0.2px;
 }
 
-.header-2 .menu-primary-menu li a {
+.header-2 .menu-primary-menu {
+    gap: 51px;
+}
+
+.header-2 .menu-primary-menu > li > a {
     line-height: 83px;
+    letter-spacing: 3px;
 }
 
 .widget-social.style-4 ul {
-    gap: 13px;
+    gap: 12px;
 }
 
 .widget-social.style-4 ul li a {
@@ -2477,12 +2506,27 @@ input:checked ~ .btn-checkbox:after {
 
 .header-2 > .header-inner {
     background-image: url(../images/bg-section/heade2-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: -20px;
     padding-top: 15px;
+    position: relative;
 }
 
 .header-2 .header-inner-wrap {
     background-color: unset;
     max-width: 1230px;
     height: 84px;
+    padding-right: 46px;
+}
+
+.header-2 .mobile-button {
+    right: 30px;
+    left: auto;
+}
+
+.header-2.is-fixed.is-small .header-inner {
+    margin-top: 0;
+    background-image: none;
+    background: #161616;
 }

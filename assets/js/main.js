@@ -1,5 +1,18 @@
 /**
-    *  
+    * headerFixed
+    *  btnmenu
+    *  topSearch
+    *  video
+    *  counter
+    *  flatAccordion
+    *  tabs
+    *  rangeslider
+    *  styleshop
+    *  btnQuantity
+    *  gotop
+    *  cursor
+    *  retinaLogos
+    *  preloader
 */
 
 ; (function ($) {
@@ -246,6 +259,103 @@
       });
     };
 
+
+    var gotop = function() {
+      if ($('div').hasClass('progress-wrap')) {
+      var progressPath = document.querySelector('.progress-wrap path');
+      var pathLength = progressPath.getTotalLength();
+      progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+      progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+      progressPath.style.strokeDashoffset = pathLength;
+      progressPath.getBoundingClientRect();
+      progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+      var updateprogress = function() {
+          var scroll = $(window).scrollTop();
+          var height = $(document).height() - $(window).height();
+          var progress = pathLength - (scroll * pathLength / height);
+          progressPath.style.strokeDashoffset = progress;
+      }
+      updateprogress();
+      $(window).scroll(updateprogress);
+      var offset = 150;
+      var duration = 550;
+      jQuery(window).on('scroll', function() {
+          if (jQuery(this).scrollTop() > offset) {
+              jQuery('.progress-wrap').addClass('active-progress');
+          } else {
+              jQuery('.progress-wrap').removeClass('active-progress');
+          }
+      });
+      jQuery('.progress-wrap').on('click', function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({ scrollTop: 0 }, duration);
+          return false;
+      })
+    }}
+  
+    const cursor = function () {
+      var myCursor = jQuery(".tf-mouse");
+      if (myCursor.length) {
+        if ($("body")) {
+          const e = document.querySelector(".tf-mouse-inner"),
+            t = document.querySelector(".tf-mouse-outer");
+          let n,
+            i = 0,
+            o = !1;
+          (window.onmousemove = function (s) {
+            o ||
+              (t.style.transform =
+                "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+              (e.style.transform =
+                "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+              (n = s.clientY),
+              (i = s.clientX);
+          }),
+            $("body").on(
+              "mouseenter",
+              "a, .canvas, .progress-wrap",
+              function () {
+                e.classList.add("mouse-hover"), t.classList.add("mouse-hover");
+              }
+            ),
+            $("body").on(
+              "mouseleave",
+              "a, .canvas, .progress-wrap",
+              function () {
+                ($(this).is("a") && $(this).closest(".canvas").length) ||
+                  (e.classList.remove("mouse-hover"),
+                  t.classList.remove("mouse-hover"));
+              }
+            ),
+            (e.style.visibility = "visible"),
+            (t.style.visibility = "visible");
+        }
+      }
+    };
+  
+    var retinaLogos = function() {
+      var retina = window.devicePixelRatio > 1 ? true : false;
+        if(retina) {
+          var tfheader =$('#logo_header').data('retina');
+          $('#site-logo-inner').find('img').attr({src:tfheader,width:'96px',height:'94px'});
+  
+          var tfmobile =$('#mobile-logo_header').data('retina');
+          $('.mobile-nav-wrap').find('img').attr({src:tfmobile,width:'121px',height:'117px'});
+  
+          var tffooter =$('#logo_footer').data('retina');
+          $('#logo-footer').find('img').attr({src:tffooter,width:'121px',height:'117px'});
+        }
+    };  
+  
+    var preloader = function () {
+      setTimeout(function () {
+        $(".preload-container").fadeOut("slow", function () {
+            $(this).remove();
+        });
+      }, 1000);
+    };
+
+
     // Dom Ready
     $(function () {
       headerFixed();
@@ -258,6 +368,10 @@
       rangeslider();
       styleshop();
       btnQuantity();
+      gotop();
+      cursor();
+      retinaLogos();
+      preloader();
     });
 
 })(jQuery);

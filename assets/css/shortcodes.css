@@ -1,6 +1,39 @@
 /**
     * themesflat-container
-    * 
+    * blog-single
+    * page-title
+    * wg-about
+    * wg-service
+    * special-menu
+    * choose-us
+    * private-event
+    * customer-testimonial
+    * partners
+    * our-product
+    * wg-coffee-post
+    * wg-news
+    * wg-coffee-time
+    * map
+    * discovery-menu
+    * explore-portfolio
+    * wg-testimonial
+    * wg-banner-coffee
+    * follow-instagram
+    * wg-counter
+    * wg-contact-us
+    * wg-menu
+    * cake-bakery
+    * wg-offer
+    * wg-our-team
+    * wg-portfolio
+    * wg-private
+    * wg-wiews
+    * book-table
+    * wg-reservation
+    * wg-shop
+    * cart-item
+    * wg-shop-detail
+    * wg-404
 */
 
 .themesflat-container {
@@ -576,6 +609,7 @@ form textarea.style-2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .wg-welcom .title {
@@ -1061,7 +1095,6 @@ form textarea.style-2 {
     color: #FFF;
     margin-bottom: 30px;
     margin-top: 27px;
-    /* max-width: 645px; */
 }
 
 .choose-us .content ul li {
@@ -1378,19 +1411,26 @@ form textarea.style-2 {
     margin-top: 14px;
 }
 
-/* customer-testimonia */
+/* customer-testimonial */
 /* -------------------------------- */
 .customer-testimonial {
     padding-top: 154px;
     padding-bottom: 133px;
-    background-image: url(../images/box-item/testimonial.png);
+    background-image: url(../images/box-item/testimonial.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-/* .customer-testimonial::before {
+.customer-testimonial > .img-1 {
+    position: absolute;
+    top: -58px;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.customer-testimonial::before {
     background-color: rgb(30 26 22 / 55%);
     position: absolute;
     width: 100%;
@@ -1398,7 +1438,7 @@ form textarea.style-2 {
     top: 0;
     left: 0;
     content: '';
-} */
+}
 
 .customer-testimonial-item p {
     color: #FFF;
@@ -1449,13 +1489,17 @@ form textarea.style-2 {
 
 .cup-coffee {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 5;
 }
 
-.cup-coffee img {
+.cup-coffee.t1 {
+    top: 0;
+}
+
+.cup-coffee.t1 img {
     width: 194px;
 }
 
@@ -1471,6 +1515,10 @@ form textarea.style-2 {
     background: #FFF;
     padding-top: 126px;
     padding-bottom: 113px;
+}
+
+.customer-testimonial.style-1::before {
+    display: none;
 }
 
 .customer-testimonial.style-1 .swiper-wrapper {
@@ -1491,7 +1539,11 @@ form textarea.style-2 {
     margin-top: -36px;
     padding-bottom: 88px;
     background-image: url(../images/box-item/bg-service.png);
-    background-position: 0 95%;
+    background-position: 0px 11px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 246px;
+    position: relative;
 }
 
 .partners .swiper-slide {
@@ -1503,7 +1555,7 @@ form textarea.style-2 {
 .partners.style-1 {
     padding-top: 89px;
     padding-bottom: 74px;
-    background-position: 0 0;
+    background-position: 0 6px;
 }
 
 /* our-product */
@@ -1564,7 +1616,6 @@ form textarea.style-2 {
 
 .product-item .image img {
     margin-left: -174px;
-    /* width: 509px; */
     min-width: 509px;
     height: 364px;
 }
@@ -1652,13 +1703,8 @@ form textarea.style-2 {
     height: unset;
 }
 
-.product-item.style-1.item-4 .image {
-    /* padding: 40px 0; */
-}
-
 .product-item.style-1.item-4 .image img {
     min-width: unset;
-    /* width: 222px; */
     height: auto;
 }
 
@@ -2023,12 +2069,23 @@ a.mapboxgl-ctrl-logo {
     padding-bottom: 127px;
     background-image: url(../images/bg-section/bg-discovery-menu.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .discovery-menu-item {
     position: relative;
     text-align: center;
-    /* margin-top: 50px; */
+}
+
+.discovery-menu-item.active .content {
+    padding-bottom: 74px;
+}
+
+.discovery-menu-item.active .content > a {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%,50%);
 }
 
 .discovery-menu-item .icon {
@@ -2140,6 +2197,10 @@ a.mapboxgl-ctrl-logo {
     transition        : all 0.3s ease-in-out;
 }
 
+.discovery-menu-item.active:hover .image img {
+    margin-bottom: 0;
+}
+
 .discovery-menu-item:hover .image img {
     margin-bottom: -33px;
 }
@@ -2152,8 +2213,8 @@ a.mapboxgl-ctrl-logo {
 }
 
 .explore-portfolio .slider-inner {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 26px;
+    padding-right: 26px;
     margin-bottom: 53px;
 }
 
@@ -2754,7 +2815,7 @@ a.mapboxgl-ctrl-logo {
 /* ------------------------------------ */
 .cake-bakery {
     padding-top: 113px;
-    padding-bottom: 111px;
+    padding-bottom: 51px;
 }
 
 .cake-bakery .heading-section p {
@@ -2776,7 +2837,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .cake-bakery-item {
-    margin-bottom: 15px;
+    margin-bottom: 75px;
 }
 
 .cake-bakery-item .image {
@@ -3283,7 +3344,7 @@ a.mapboxgl-ctrl-logo {
     padding-top: 153px;
     padding-bottom: 135px;
     background-image: url(../images/bg-section/bg-book-table.png);
-    background-position: center;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -3905,8 +3966,6 @@ select.style-2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* display: flex;
-    align-items: center; */
 }
 
 .wg-404 .content {
@@ -3923,7 +3982,6 @@ select.style-2 {
     position: absolute;
     content: '4';
     top: 34px;
-    /* right: 32.5%; */
     right: 50%;
     transform: translateX(333px);
     font-size: 247px;
@@ -3935,7 +3993,6 @@ select.style-2 {
     position: absolute;
     content: '4';
     top: 34px;
-    /* left: 32.5%; */
     left: 50%;
     transform: translateX(-333px);
     font-size: 247px;

@@ -1,4 +1,25 @@
 
+@media (min-width: 1921px) {
+    .choose-us {
+        background-size: cover;
+    }
+    .wg-coffee-post > .center,
+    .wg-coffee-post > .left {
+        width: 100%;
+    }
+    .wg-coffee-post > .right {
+        width: 50%;
+    }
+    .right .coffee-post-item .image img, 
+    .left .coffee-post-item .image img {
+        height: unset;
+    }
+    .wg-coffee-time .left img {
+        width: 100%;
+        height: unset;
+    }
+}
+
 @media (max-width: 1440px) {
     .choose-us.style-1.type-1 .img-left {
         margin-left: 95px;

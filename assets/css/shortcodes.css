@@ -406,11 +406,12 @@ form textarea.style-2 {
 /* ------------------------------------ */
 .page-title {
     padding-top: 371px;
-    padding-bottom: 259px;
+    padding-bottom: 189px;
     background-image: url(../images/bg-section/bg-home-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -434,7 +435,14 @@ form textarea.style-2 {
     width: 100%;
     height: 100%;
 }
-  
+
+.page-title .content .swiper-wrapper {
+    padding-bottom: 70px;
+}
+
+.page-title .content .swiper-container .swiper-pagination.style-2 .swiper-pagination-bullet {
+    background-color: #FFF;
+}  
 
 .page-title .content .sub-title {
     color: #F6E7D0;
@@ -588,13 +596,25 @@ form textarea.style-2 {
 /* wg-welcom */
 .wg-welcom {
     position: absolute;
-    top: 205px;
-    left: 6px;
+    top: 67px;
+    right: -51px;
     width: 403px;
     padding: 60px 40px 50px;
     background-color: #FFF;
     border-radius: 20px;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.wg-welcom.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .wg-welcom .button-close {
@@ -1110,6 +1130,10 @@ form textarea.style-2 {
     margin-bottom: 17px;
 }
 
+.choose-us .content ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
 .choose-us .content ul li i {
     width: 15px;
     height: 15px;
@@ -1277,6 +1301,10 @@ form textarea.style-2 {
     margin-top: 0;
 }
 
+.choose-us.style-1.type-1 .content ul {
+    margin-bottom: 0;
+}
+
 .choose-us.style-1.type-1 .content ul li {
     letter-spacing: 0.9px;
 }
@@ -1420,6 +1448,7 @@ form textarea.style-2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -1904,6 +1933,10 @@ form textarea.style-2 {
     padding-bottom: 51px;
 }
 
+.wg-news .wg-blog {
+    margin-bottom: 0;
+}
+
 .swiper-button-next.style-1 {
     width: 57px;
     height: 57px;
@@ -1990,6 +2023,8 @@ form textarea.style-2 {
 .wg-coffee-time .center {
     background-color: #faf1e3;
     padding-top: 125px;
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -2069,23 +2104,11 @@ a.mapboxgl-ctrl-logo {
     padding-bottom: 127px;
     background-image: url(../images/bg-section/bg-discovery-menu.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .discovery-menu-item {
     position: relative;
     text-align: center;
-}
-
-.discovery-menu-item.active .content {
-    padding-bottom: 74px;
-}
-
-.discovery-menu-item.active .content > a {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%,50%);
 }
 
 .discovery-menu-item .icon {
@@ -2195,10 +2218,6 @@ a.mapboxgl-ctrl-logo {
     -ms-transition    : all 0.3s ease-in-out;
     -o-transition     : all 0.3s ease-in-out;
     transition        : all 0.3s ease-in-out;
-}
-
-.discovery-menu-item.active:hover .image img {
-    margin-bottom: 0;
 }
 
 .discovery-menu-item:hover .image img {
@@ -2373,8 +2392,13 @@ a.mapboxgl-ctrl-logo {
     background-color: rgba(18, 15, 12, 0.38);
 }
 
-.wg-banner-coffee .top img {
+.wg-banner-coffee .top {
     height: 536px;
+    background-image: url(../images/box-item/video-full.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .wg-banner-coffee .bottom {
@@ -3258,6 +3282,16 @@ a.mapboxgl-ctrl-logo {
     width: 50%;
     height: 100%;
     margin: 0;
+    opacity: 0.35 !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-button > div:hover {
+    opacity: 1 !important;
 }
 
 .swiper-button-prev.style-3::after {

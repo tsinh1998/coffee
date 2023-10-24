@@ -51,7 +51,7 @@
         padding: 30px 30px 0 30px;
     }
     .wg-welcom {
-        display: none;
+        left: 0;
     }
     .choose-us {
         background-size: cover;
@@ -81,6 +81,9 @@
     .partners {
         padding-left:  15px !important; 
         padding-right:  15px !important; 
+    }
+    .product-item .image {
+        text-align: center;
     }
 }
 
@@ -209,7 +212,6 @@
     .header-2 .wg-bag,
     .canvas,
     .header-right::after,
-    .header-search,
     .main-nav {
         display: none;
     }
@@ -234,10 +236,12 @@
     }
     .wg-about .image ,
     .wg-about .content {
-        width: 100%;
+        /* width: 100%; */
         margin-left: 0;
         margin-right: 0;
-        padding: 0;
+    }
+    .wg-about .content {
+        margin-left: -100px;
     }
     .wg-coffee-post {
         flex-wrap: wrap;
@@ -256,6 +260,38 @@
         min-width: unset;
         width: 100%;
     }
+    .header-2 .header-inner-wrap {
+        justify-content: flex-end;
+        padding-right: 80px;
+    }
+    .header-2.is-fixed #site-logo {
+        position: fixed;
+        top: -100%;
+        left: 56px;
+        z-index: 100;
+    }
+    .header-2.is-fixed.is-small #site-logo {
+        top: 56px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .swiper-wrapper {
+        padding-bottom: 0 !important;
+    }
+    .private-event .image {
+        width: unset;
+        height: unset;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .private-event .image img {
+        position: unset !important;
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 820px) {
@@ -268,9 +304,6 @@
     .cart-item {
         flex-wrap: wrap;
         row-gap: 0px;
-    }
-    .service-item .content {
-        padding-bottom: 0;
     }
     .service-item .content .title {
         font-size: 20px;
@@ -292,9 +325,17 @@
     .wg-coffee-time .center .heading-section {
         margin-bottom: 10px;
     }
+    .wg-about .content {
+        margin-left: -200px;
+    }
 }
 
 @media (max-width: 768px) {
+    .wg-about .image, .wg-about .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .wg-about .image img ,
     .wg-about .image {
         min-width: unset;
         width: 100%;
@@ -333,7 +374,7 @@
         display: none;
     }
     .discovery-menu-item {
-        margin-bottom: 90px;
+        margin-bottom: 140px;
     }
     .wg-reservation form .columns {
         flex-wrap: wrap;
@@ -342,7 +383,10 @@
         margin-bottom: 40px !important;
     }
     .header-2 > .header-inner {
-        padding: 80px 0 80px 150px;
+        padding:  0;
+        margin-top: 0;
+        background-image: none;
+        background-color: #2d2723;
     }
     .wg-banner-coffee .top img {
         height: 150px;
@@ -362,13 +406,7 @@
         margin-bottom: 15px;
     }
     .private-event .image {
-        width: unset;
-        height: unset;
-    }
-    .private-event .image img {
-        position: unset !important;
-        margin-bottom: 15px;
-        width: 100%;
+        flex-wrap: wrap;
     }
     .product-item.style-list {
         flex-wrap: wrap;
@@ -377,7 +415,7 @@
         width: 100% !important;
     }
     .side-bar {
-        margin-top: 15px;
+        margin-top: 50px;
     }
     .product-item .image img {
         margin-left: -174px;
@@ -440,6 +478,7 @@
     .choose-us.style-1.type-1 .content {
         margin-top: 0;
         padding-top: 30px;
+        margin-bottom: 0;
     }
     .choose-us.style-1.type-1 .img-left {
         min-width: unset;
@@ -469,8 +508,18 @@
     .wg-information:last-child {
         width: 100%;
     }
-    .header-inner {
-        margin-top: 42px;
+    .header #site-logo {
+        width: 82px;
+        height: 82px;
+        padding: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .header-2 #site-logo {
+        top: 56px;
+        left: 56px;
+    }
+    .header-right {
+        gap: 15px;
     }
     .wg-update-wrap form {
         padding-left: 15px;
@@ -479,6 +528,10 @@
     .page-title {
         padding-top: 200px;
         padding-bottom: 200px;
+    }
+    .page-title.home-2 {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .page-title .content .title {
         font-size: 40px;
@@ -490,6 +543,12 @@
     .footer-bottom {
         justify-content: center;
     }
+    .footer {
+        padding-top: 70px !important;
+    }
+    .logo-footer {
+        text-align: center;
+    }
     .special-menu.style-1,
     .wg-reservation,
     .wg-contact-us,
@@ -499,7 +558,6 @@
     .wg-update.type-1,
     .our-product,
     .wg-our-team,
-    .banner-page,
     .wg-private,
     .customer-testimonial.style-1,
     .wg-shop,
@@ -507,6 +565,9 @@
     .our-product.style-slide,
     .wg-news,
     .choose-us.style-1,
+    .discovery-menu,
+    .cake-bakery,
+    .wg-menu,
     .special-menu {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -516,9 +577,21 @@
         padding-top: 50px;
         padding-bottom: 100px;
     }
+    .wg-testimonial.style-1,
     .follow-instagram,
-    .wg-offer,
-    .wg-testimonial {
+    .wg-offer {
         padding-bottom: 70px;
+    }
+    .wg-testimonial {
+        padding-bottom: 0;
+    }
+    .banner-page {
+        padding-top: 200px !important;
+    }
+    .book-table {
+        background-image: none;
+        background-color: #2d2723;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }

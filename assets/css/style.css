@@ -1876,7 +1876,7 @@ a:focus {
 .header-2 .header-inner-wrap {
     background-color: unset;
     max-width: 1230px;
-    height: 112px;
+    height: 84px;
     padding-right: 46px;
 }
 
@@ -2040,7 +2040,7 @@ input:checked ~ .btn-checkbox:after {
 
 .footer-bottom {
     margin-top: 85px;
-    border-top: 1px solid #FFF;
+    border-top: 1px solid #4c4744;
     padding-top: 24px;
     padding-bottom: 25px;
     display: flex;
@@ -2312,11 +2312,27 @@ input:checked ~ .btn-checkbox:after {
     position: relative;
 }
 
+.wg-blog::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.wg-blog:hover::before {
+    animation: height_blog 1s;
+}
+
 .wg-blog .image {
     height: 100%;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
 }
 
 .wg-blog .image img {
@@ -2326,6 +2342,11 @@ input:checked ~ .btn-checkbox:after {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.wg-blog .content {
+    position: relative;
+    z-index: 1;
 }
 
 .wg-blog:hover .image img {

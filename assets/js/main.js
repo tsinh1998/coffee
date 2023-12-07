@@ -344,6 +344,21 @@
           $('#logo-footer').find('img').attr({src:tffooter,width:'121px',height:'117px'});
         }
     };  
+
+    // var blog = function () {
+    //   if ($('div').hasClass('wg-blog')) {
+    //     var blog = $('.wg-blog').find('.title')
+    //     blog.on( "mouseenter", function (e) {
+    //       e.preventDefault();
+    //         $(this).parents(".wg-blog").addClass("active");
+    //       }
+    //     )
+    //     blog.on( "mouseleave", function () {
+    //         $(this).parents(".wg-blog").removeClass("active");
+    //       }
+    //     )
+    //   }
+    // };
   
     var preloader = function () {
       setTimeout(function () {
@@ -369,6 +384,7 @@
       gotop();
       cursor();
       retinaLogos();
+      // blog();
       preloader();
     });
 
